@@ -25,7 +25,7 @@ and a quiz every evening — **fully automated with GitHub Free, no AI at runtim
    active, so GitHub does **not** disable the scheduled workflow after
    60 days of inactivity. A monthly `keepalive.yml` run is a second safety net.
 
-Content lives in `data/lessons.json` (1,430 lessons — almost 4 years of daily
+Content lives in `data/lessons.json` (1,446 lessons — almost 4 years of daily
 words). Each lesson is `{word, meaning, phonetic, example, synonyms,
 quiz_q, quiz_options (4), quiz_a, type}`. All example sentences are original,
 written for this repo. No copied text from BBC, Duolingo, or textbooks.
@@ -42,7 +42,7 @@ written for this repo. No copied text from BBC, Duolingo, or textbooks.
 
 ## Sources & attribution
 
-- **Lesson bank (`data/lessons.json`, `data/words.txt`):** all 1,430 words,
+- **Lesson bank (`data/lessons.json`, `data/words.txt`):** all 1,446 words,
   meanings, example sentences and quizzes are original content written for
   this repo. No text was copied from BBC, Duolingo, textbooks or any other
   published course. Example sentences are built from fixed original
@@ -82,22 +82,23 @@ written for this repo. No copied text from BBC, Duolingo, or textbooks.
 - Storage: `lessons.json` is under 2 MB, far below the 500 MB artifact /
   10 GB cache limits. GitHub Pages is not needed for this channel.
 
-## Setup (after GitHub is connected)
+## Setup (live since 2026-11-20)
 
-1. **Create a public repo** on GitHub and push this folder to it.
-2. **Create the bot:** in Telegram, open `@BotFather`, send `/newbot`,
+The repo is live at https://github.com/halakouai-byte/english-vocab-daily and posts twice a day. This is how it was set up:
+
+1. **Create the bot:** in Telegram, open `@BotFather`, send `/newbot`,
    copy the token.
-3. **Add the bot to your channel** as an admin with permission to post.
-4. **Get the channel chat ID:** the easiest way is to forward a channel post
+2. **Add the bot to your channel** as an admin with permission to post.
+3. **Get the channel chat ID:** the easiest way is to forward a channel post
    to `@userinfobot` or `@getmyid_bot`, or use the Bot API `getUpdates`
    after the bot is admin — it is a negative number for channels
    (e.g. `-1001234567890`). Do **not** share the token or chat ID publicly.
-5. **Add GitHub secrets** (repo → Settings → Secrets and variables → Actions):
+4. **Add GitHub secrets** (repo → Settings → Secrets and variables → Actions):
    - `TELEGRAM_BOT_TOKEN` — the BotFather token
    - `TELEGRAM_CHAT_ID` — the channel chat ID
-6. **Test manually:** Actions → "Post to Telegram" → Run workflow.
+5. **Test manually:** Actions → "Post to Telegram" → Run workflow.
    Or test locally first (see below).
-7. **Confirm the username** in the Telegram app and update this README.
+6. **Confirm the username** in the Telegram app and update this README.
 
 > Never commit `TELEGRAM_BOT_TOKEN` or `TELEGRAM_CHAT_ID` to the repo.
 > If a token ever leaks, revoke it in BotFather with `/revoke` and issue a new one.
@@ -127,12 +128,10 @@ prefer the GitHub workflow run instead.
 scripts/post.py                   # poster: stdlib + requests only, no AI
 scripts/templates.py              # fixed message templates
 scripts/generate_lessons.py       # rebuilds lessons.json from data/words.txt
-data/lessons.json                 # 1,430 lessons
+data/lessons.json                 # 1,446 lessons
 data/words.txt                    # source word list (word|phonetic|meaning|synonyms|type)
 data/state.json                   # {last_index, last_date, last_hash}
-logs/error-log.md                 # error log (appended by post.py)
-logs/keepalive.md                 # monthly keepalive log
-README.md / BUILD_REPORT.md / LICENSE (MIT) / .gitignore
+README.md / BUILD_REPORT.md / LICENSE (MIT) / data/LICENSE (CC BY 4.0) / .gitignore
 ```
 
 ## Safety / dedupe / retries
@@ -150,8 +149,10 @@ README.md / BUILD_REPORT.md / LICENSE (MIT) / .gitignore
   `data/state.json` only). Error messages are redacted in `scripts/post.py`
   before logging, so the bot token can never appear in a log line.
 
-## Still needed from the user
+## Still needed
 
-- GitHub connection (not connected yet — do **not** push until it is).
-- BotFather token + channel chat ID (add as GitHub secrets, never in chat).
-- Confirm the exact channel username (`@englishworddaily` is a placeholder).
+- Confirm the exact channel username (`@englishworddaily` is a placeholder —
+  the channel exists, but the exact username is unconfirmed; update this
+  README once confirmed in the Telegram app).
+- The bot token and channel chat ID are already stored as GitHub secrets
+  (`TELEGRAM_BOT_TOKEN`, `TELEGRAM_CHAT_ID`) — never in chat or in the repo.

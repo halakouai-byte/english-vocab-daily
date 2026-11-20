@@ -3,3 +3,8 @@ __pycache__/
 .venv/
 .env
 logs/
+# credentials and keys — never commit these
+*.pem
+*.key
+credentials.json
+*credentials*

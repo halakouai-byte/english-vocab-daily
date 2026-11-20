@@ -1,5 +1,7 @@
 # Build Report — English Vocabulary Daily automation repo
 
+> **Erratum (2026-11-21):** this is the original 2026-11-18 build log, kept as history. The lesson bank is **1,446 lessons (686,392 bytes)**, not 1,430 (768 KB) as written below, and the repo is now live on GitHub — first post published 2026-11-20. The "not connected / do not push" notes below are outdated; the connection works.
+
 Built locally on 2026-11-18. **Ready to push to GitHub once GitHub is connected.
 Nothing has been pushed — GitHub is not connected yet, so pushing is blocked.**
 
