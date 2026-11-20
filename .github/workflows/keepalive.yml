@@ -1,0 +1,30 @@
+name: Keepalive
+
+on:
+  schedule:
+    # 1st of every month — second belt against cron being disabled
+    # after 60 days of repo inactivity. The daily post workflow already
+    # commits state on every run, so this is only a safety net.
+    - cron: '0 6 1 * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  keepalive:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Touch keepalive log
+        run: |
+          mkdir -p logs
+          echo "- $(date -u +%FT%TZ) keepalive" >> logs/keepalive.md
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add logs/keepalive.md
+          git diff --cached --quiet || git commit -m "chore: monthly keepalive $(date -u +%F)"
+          git push
