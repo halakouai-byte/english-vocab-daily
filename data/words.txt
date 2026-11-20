@@ -1,0 +1,1447 @@
+# word|phonetic|meaning|synonyms|type
+day|/deɪ/|a period of 24 hours|24 hours|noun
+water|/ˈwɔːtə/|a clear liquid|clear liquid, drink|noun
+house|/haʊs/|a building where people live|home, dwelling|noun
+friend|/frend/|a person you like and trust|companion, buddy|noun
+happy|/ˈhæpi/|feeling joy|joyful, pleased|adjective
+book|/bʊk/|a set of pages with words, joined together|novel, textbook|noun
+school|/skuːl/|a place for learning|learning place, academy|noun
+cat|/kæt/|a small animal with fur that people keep as a pet|kitten, pet|noun
+dog|/dɒɡ/|an animal with four legs that people keep as a pet|puppy, pet|noun
+sun|/sʌn/|the star that gives light|star, light|noun
+mother|/ˈmʌðə/|a female parent|female parent, mum|noun
+father|/ˈfɑːðə/|a male parent|dad, parent|noun
+family|/ˈfæməli/|a group of people who are related to each other|relatives, household|noun
+child|/tʃaɪld/|a young person, not yet an adult|kid, youngster|noun
+man|/mæn/|an adult male person|gentleman, male|noun
+woman|/ˈwʊmən/|an adult female|adult female, lady|noun
+boy|/bɔɪ/|a young male person|lad, young man|noun
+girl|/ɡɜːl/|a young female person|young woman|noun
+red|/red/|the colour of blood or a ripe tomato|crimson, scarlet|adjective
+blue|/bluː/|the colour of the sky on a clear day|navy, sky-blue|adjective
+big|/bɪɡ/|large in size|large, huge|adjective
+small|/smɔːl/|little in size|little, tiny|adjective
+good|/ɡʊd/|of high quality|fine, excellent|adjective
+bad|/bæd/|not good|poor, awful|adjective
+new|/njuː/|recently made or found|recent, fresh|adjective
+old|/əʊld/|having lived a long time|aged, ancient|adjective
+hot|/hɒt/|having a high temperature|warm, heated|adjective
+cold|/kəʊld/|having a low temperature|chilly, cool|adjective
+eat|/iːt/|to put food in your mouth and swallow it|consume|verb
+drink|/drɪŋk/|to take liquid into your mouth and swallow it|sip|verb
+abandon|/əˈbændən/|to leave someone or something behind|leave, desert|verb
+ability|/əˈbɪləti/|the power or skill to do something|skill, talent|noun
+absent|/ˈæbsənt/|not present in a place|missing, away|adjective
+absolute|/ˈæbsəluːt/|complete and total, with no doubt|complete, total|adjective
+absorb|/əbˈzɔːb/|to take in liquid, information|soak up, take in|verb
+abundant|/əˈbʌndənt/|existing in large amounts|plentiful, ample|adjective
+accept|/əkˈsept/|to agree to take or do something|agree to, receive|verb
+access|/ˈækses/|a way to enter or use something|entry, approach|noun
+accurate|/ˈækjərət/|correct and exact|precise, exact|adjective
+achieve|/əˈtʃiːv/|to succeed in doing something after effort|accomplish, reach|verb
+acquire|/əˈkwaɪə/|to get or buy something|obtain, gain|verb
+active|/ˈæktɪv/|busy and doing things|energetic, lively|adjective
+adapt|/əˈdæpt/|to change to suit a new situation|adjust, modify|verb
+admire|/ədˈmaɪə/|to respect and like someone or something|respect, appreciate|verb
+admit|/ədˈmɪt/|to say that something is true|confess, acknowledge|verb
+adopt|/əˈdɒpt/|to take something as your own|take up, embrace|verb
+advance|/ədˈvɑːns/|to move forward or make progress|progress, move forward|verb
+advantage|/ədˈvɑːntɪdʒ/|something that helps you do better|benefit, edge|noun
+adventure|/ədˈventʃə/|an exciting and unusual experience|journey, expedition|noun
+advice|/ədˈvaɪs/|an opinion about what to do|guidance, suggestion|noun
+affect|/əˈfekt/|to have an influence on something|influence, impact|verb
+afford|/əˈfɔːd/|to have enough money to buy something|manage, be able to pay for|verb
+afraid|/əˈfreɪd/|feeling fear|scared, frightened|adjective
+agree|/əˈɡriː/|to have the same opinion as someone|concur, accept|verb
+ahead|/əˈhed/|in front|forward|adverb
+aim|/eɪm/|a goal or purpose|goal, target|noun
+alarm|/əˈlɑːm/|a warning sound or feeling of fear|warning, alert|noun
+alike|/əˈlaɪk/|very similar|similar, same|adjective
+alive|/əˈlaɪv/|living, not dead|living, active|adjective
+allow|/əˈlaʊ/|to let someone do something|permit, let|verb
+almost|/ˈɔːlməʊst/|nearly, but not quite|nearly, just about|adverb
+alone|/əˈləʊn/|without other people|by yourself, solo|adjective
+alter|/ˈɔːltə/|to change something slightly|change, modify|verb
+although|/ɔːlˈðəʊ/|in spite of the fact that|though, even though|conjunction
+always|/ˈɔːlweɪz/|at all times|every time, forever|adverb
+amaze|/əˈmeɪz/|to surprise someone very much|astonish, surprise|verb
+ambition|/æmˈbɪʃn/|a strong desire to succeed|goal, aspiration|noun
+amount|/əˈmaʊnt/|a quantity of something|quantity, total|noun
+ancient|/ˈeɪnʃənt/|very old, from long ago|old, antique|adjective
+anger|/ˈæŋɡə/|a strong feeling of being upset|rage, fury|noun
+angle|/ˈæŋɡl/|the space between two lines|corner, perspective|noun
+announce|/əˈnaʊns/|to tell people something officially|declare, state|verb
+annual|/ˈænjuəl/|happening once a year|yearly, once a year|adjective
+answer|/ˈɑːnsə/|a reply to a question|reply, response|noun
+anxious|/ˈæŋkʃəs/|worried or nervous|worried, nervous|adjective
+apart|/əˈpɑːt/|separate|away|adverb
+apology|/əˈpɒlədʒi/|words saying you are sorry|sorry, regret|noun
+appeal|/əˈpiːl/|to ask for help|request, attract|verb
+appear|/əˈpɪə/|to become visible|show up|verb
+appreciate|/əˈpriːʃieɪt/|to value something or be grateful|value, be grateful for|verb
+approach|/əˈprəʊtʃ/|to come near|method|verb
+appropriate|/əˈprəʊpriət/|suitable for a situation|fitting, suitable|adjective
+approve|/əˈpruːv/|to say something is good or allowed|agree to, accept|verb
+argue|/ˈɑːɡjuː/|to disagree with words|debate, dispute|verb
+arise|/əˈraɪz/|to happen or appear|occur, emerge|verb
+arrange|/əˈreɪndʒ/|to organise or plan something|organise, plan|verb
+arrive|/əˈraɪv/|to reach a place|reach, get to|verb
+artificial|/ˌɑːtɪˈfɪʃl/|made by people, not natural|man-made, fake|adjective
+ashamed|/əˈʃeɪmd/|feeling guilty or embarrassed|embarrassed, guilty|adjective
+aside|/əˈsaɪd/|to one side|to the side, apart|adverb
+asleep|/əˈsliːp/|in a state of sleep|sleeping|adjective
+assist|/əˈsɪst/|to help someone with a task|help, aid|verb
+assume|/əˈsjuːm/|to think something is true without proof|suppose, presume|verb
+attach|/əˈtætʃ/|to join or fix something to something else|join, fix|verb
+attempt|/əˈtempt/|to try to do something|try, effort|verb
+attend|/əˈtend/|to be present at an event|be present at, go to|verb
+attention|/əˈtenʃn/|careful thought or interest|focus, notice|noun
+attitude|/ˈætɪtjuːd/|a way of thinking or feeling|mindset, outlook|noun
+attract|/əˈtrækt/|to make someone interested|draw, appeal to|verb
+available|/əˈveɪləbl/|ready to use or free to talk|free, accessible|adjective
+average|/ˈævrɪdʒ/|normal; about the middle|typical|adjective
+avoid|/əˈvɔɪd/|to stay away from something|stay away from, escape|verb
+aware|/əˈweə/|knowing about something|conscious, knowing|adjective
+awful|/ˈɔːfl/|very bad or unpleasant|terrible, horrible|adjective
+awkward|/ˈɔːkwəd/|embarrassing or uncomfortable|embarrassing, clumsy|adjective
+background|/ˈbækɡraʊnd/|the part behind something|setting|noun
+balance|/ˈbæləns/|a steady state in which nothing falls over|steadiness, equilibrium|noun
+ban|/bæn/|to officially stop something|forbid, prohibit|verb
+barely|/ˈbeəli/|almost not, only just|hardly, almost not|adverb
+bargain|/ˈbɑːɡɪn/|a good price|deal|noun
+barrier|/ˈbæriə/|something that blocks the way|obstacle, block|noun
+basic|/ˈbeɪsɪk/|simple and essential|simple, fundamental|adjective
+battle|/ˈbætl/|a fight|fight|noun
+beauty|/ˈbjuːti/|the quality of being beautiful|loveliness, attractiveness|noun
+behave|/bɪˈheɪv/|to act in a particular way|act, conduct yourself|verb
+belief|/bɪˈliːf/|something you think is true|faith, conviction|noun
+benefit|/ˈbenɪfɪt/|an advantage or good result|advantage, gain|noun
+beyond|/bɪˈjɒnd/|further than|past|preposition
+blame|/bleɪm/|to say someone is responsible for something bad|hold responsible, fault|verb
+blank|/blæŋk/|empty, with nothing written|empty, bare|adjective
+blend|/blend/|to mix things together smoothly|mix, combine|verb
+blind|/blaɪnd/|unable to see|sightless|adjective
+borrow|/ˈbɒrəʊ/|to take something and return it later|take on loan, use temporarily|verb
+brave|/breɪv/|not afraid, willing to face danger|courageous, fearless|adjective
+breakthrough|/ˈbreɪkθruː/|an important discovery or success|discovery, success|noun
+breath|/breθ/|the air you take in and out|air, inhalation|noun
+bright|/braɪt/|full of light|shining|adjective
+broad|/brɔːd/|wide|extensive|adjective
+budget|/ˈbʌdʒɪt/|a plan for how to spend money|spending plan, allowance|noun
+build|/bɪld/|to make something by putting parts together|construct, make|verb
+burden|/ˈbɜːdn/|a heavy load or responsibility|load, responsibility|noun
+calm|/kɑːm/|peaceful and not worried|peaceful, relaxed|adjective
+capable|/ˈkeɪpəbl/|able to do something|able, skilled|adjective
+career|/kəˈrɪə/|a job or profession over a long time|profession, job|noun
+careful|/ˈkeəfl/|giving attention to avoid mistakes|cautious, attentive|adjective
+carry|/ˈkæri/|to hold and move something|hold, transport|verb
+catch|/kætʃ/|to take hold of something moving|grab, seize|verb
+cause|/kɔːz/|the reason something happens|reason, source|noun
+cautious|/ˈkɔːʃəs/|careful to avoid danger|careful, wary|adjective
+celebrate|/ˈseləbreɪt/|to do something fun for a special event|mark, honour|verb
+certain|/ˈsɜːtn/|sure, without doubt|sure, definite|adjective
+challenge|/ˈtʃælɪndʒ/|a difficult task that tests you|test, difficulty|noun
+chance|/tʃɑːns/|an opportunity|opportunity|noun
+change|/tʃeɪndʒ/|to become different|alter, transform|verb
+character|/ˈkærəktə/|the qualities of a person|personality, nature|noun
+charge|/tʃɑːdʒ/|to ask for money|ask for payment|verb
+check|/tʃek/|to look at something to make sure it is right|verify, examine|verb
+choice|/tʃɔɪs/|the act of choosing|selection|noun
+choose|/tʃuːz/|to pick something|pick, select|verb
+circle|/ˈsɜːkl/|a round shape|round, loop|noun
+citizen|/ˈsɪtɪzn/|a person who belongs to a country|national, resident|noun
+clear|/klɪə/|easy to understand|obvious, transparent|adjective
+clever|/ˈklevə/|smart and quick to understand|smart, intelligent|adjective
+climate|/ˈklaɪmət/|the usual weather in a place|weather, atmosphere|noun
+close|/kləʊz/|to shut something|shut, seal|verb
+coach|/kəʊtʃ/|a person who trains someone|trainer, mentor|noun
+coast|/kəʊst/|the land next to the sea|shore, seaside|noun
+collect|/kəˈlekt/|to gather things together|gather, bring together|verb
+college|/ˈkɒlɪdʒ/|a place for higher education|university, school|noun
+combine|/kəmˈbaɪn/|to join things together into one|join, merge|verb
+comfortable|/ˈkʌmftəbl/|feeling relaxed and at ease|relaxed, cosy|adjective
+comment|/ˈkɒment/|something you say about a topic|remark, note|noun
+common|/ˈkɒmən/|usual; happening often|ordinary|adjective
+communicate|/kəˈmjuːnɪkeɪt/|to share information with others|share, convey|verb
+compare|/kəmˈpeə/|to look at similarities and differences|contrast, match|verb
+compete|/kəmˈpiːt/|to try to win against others|contend, vie|verb
+complete|/kəmˈpliːt/|finished, with nothing missing|whole, entire|adjective
+complex|/ˈkɒmpleks/|difficult and with many parts|complicated, intricate|adjective
+concentrate|/ˈkɒnsntreɪt/|to focus your mind on something|focus, pay attention|verb
+concern|/kənˈsɜːn/|worry|care|noun
+condition|/kənˈdɪʃn/|the state of something|state|noun
+confident|/ˈkɒnfɪdənt/|sure of yourself|self-assured, sure|adjective
+conflict|/ˈkɒnflɪkt/|a serious disagreement|disagreement, clash|noun
+confused|/kənˈfjuːzd/|not able to understand clearly|puzzled, mixed up|adjective
+connect|/kəˈnekt/|to join things together with a link|join, link|verb
+consider|/kənˈsɪdə/|to think carefully about something|think about, weigh|verb
+consist|/kənˈsɪst/|to be made of something|be made up of, comprise|verb
+constant|/ˈkɒnstənt/|happening all the time|continuous, steady|adjective
+construct|/kənˈstrʌkt/|to build something|build, make|verb
+contain|/kənˈteɪn/|to hold something inside|hold, include|verb
+content|/ˈkɒntent/|happy and satisfied|satisfied, material|adjective
+continue|/kənˈtɪnjuː/|to keep doing something|keep going, carry on|verb
+control|/kənˈtrəʊl/|power to make something happen|power, command|noun
+convenient|/kənˈviːniənt/|easy and suitable|handy, suitable|adjective
+conversation|/ˌkɒnvəˈseɪʃn/|a talk between people|talk, chat|noun
+convert|/kənˈvɜːt/|to change something into another form|change, transform|verb
+convince|/kənˈvɪns/|to make someone believe something|persuade, assure|verb
+cook|/kʊk/|to prepare food with heat|prepare food, make|verb
+cope|/kəʊp/|to manage a difficult situation|manage, deal with|verb
+correct|/kəˈrekt/|right and without mistakes|right, accurate|adjective
+cost|/kɒst/|the price of something|price, expense|noun
+courage|/ˈkʌrɪdʒ/|the ability to face fear|bravery, nerve|noun
+course|/kɔːs/|a set of lessons|lessons, path|noun
+create|/kriˈeɪt/|to make something new|make, produce|verb
+creative|/kriˈeɪtɪv/|having new and original ideas|imaginative, inventive|adjective
+culture|/ˈkʌltʃə/|the ideas and customs of a group|customs, traditions|noun
+curious|/ˈkjʊəriəs/|wanting to know or learn|inquisitive, interested|adjective
+current|/ˈkʌrənt/|happening now|present, modern|adjective
+custom|/ˈkʌstəm/|a traditional way of doing something|tradition, habit|noun
+daily|/ˈdeɪli/|happening every day|every day, everyday|adjective
+damage|/ˈdæmɪdʒ/|harm to something|harm, injury|noun
+danger|/ˈdeɪndʒə/|the chance of harm|risk, hazard|noun
+data|/ˈdeɪtə/|information or facts|information, facts|noun
+deal|/diːl/|an agreement|agreement|noun
+debate|/dɪˈbeɪt/|a discussion about a topic|discussion, argument|noun
+decide|/dɪˈsaɪd/|to choose something after thinking|choose, determine|verb
+decision|/dɪˈsɪʒn/|a choice you make|choice, conclusion|noun
+declare|/dɪˈkleə/|to say something officially|announce, state|verb
+decrease|/dɪˈkriːs/|to become smaller|reduce, go down|verb
+deep|/diːp/|far down|profound|adjective
+defeat|/dɪˈfiːt/|to win against someone|beat|verb
+defend|/dɪˈfend/|to protect someone or something|protect, guard|verb
+define|/dɪˈfaɪn/|to explain the meaning of a word|explain, describe|verb
+degree|/dɪˈɡriː/|a level of study|level, extent|noun
+delay|/dɪˈleɪ/|to make something happen later|postpone, hold up|verb
+deliver|/dɪˈlɪvə/|to bring something to someone|bring, hand over|verb
+demand|/dɪˈmɑːnd/|to ask for something strongly|request, require|verb
+depend|/dɪˈpend/|to need something or someone|rely, count on|verb
+describe|/dɪˈskraɪb/|to say what something is like|explain, depict|verb
+design|/dɪˈzaɪn/|a plan for how something looks or works|plan, pattern|noun
+desire|/dɪˈzaɪə/|a strong wish for something|wish, longing|noun
+despite|/dɪˈspaɪt/|in spite of something|in spite of, regardless of|preposition
+detail|/ˈdiːteɪl/|a small fact about something|fact, point|noun
+develop|/dɪˈveləp/|to grow or improve over time|grow, improve|verb
+device|/dɪˈvaɪs/|a machine or tool|gadget, tool|noun
+difference|/ˈdɪfrəns/|the way things are not the same|contrast, variation|noun
+difficult|/ˈdɪfɪkəlt/|not easy|hard, tough|adjective
+direct|/dɪˈrekt/|straight|immediate|adjective
+discover|/dɪˈskʌvə/|to find something new|find, uncover|verb
+discuss|/dɪˈskʌs/|to talk about something with others|talk about, debate|verb
+display|/dɪˈspleɪ/|to show something|show, exhibit|verb
+distance|/ˈdɪstəns/|how far something is|space, gap|noun
+divide|/dɪˈvaɪd/|to split into parts|split, separate|verb
+document|/ˈdɒkjumənt/|a written record|record, paper|noun
+doubt|/daʊt/|not being sure about something|uncertainty, question|noun
+downtown|/ˈdaʊntaʊn/|the central part of a city|city centre, centre|noun
+dream|/driːm/|images in sleep|vision|noun
+duty|/ˈdjuːti/|something you must do|responsibility, obligation|noun
+eager|/ˈiːɡə/|very keen to do something|keen, excited|adjective
+early|/ˈɜːli/|before the usual time|ahead of time, soon|adjective
+earn|/ɜːn/|to get money for work|make, gain|verb
+earth|/ɜːθ/|the planet we live on|world, ground|noun
+easily|/ˈiːzɪli/|without difficulty|simply, without trouble|adverb
+economy|/ɪˈkɒnəmi/|the money system of a country|money system, market|noun
+edge|/edʒ/|the border of something|border, rim|noun
+educate|/ˈedjukeɪt/|to teach someone|teach, train|verb
+effect|/ɪˈfekt/|a result of something|result, impact|noun
+efficient|/ɪˈfɪʃnt/|working well without waste|effective, productive|adjective
+effort|/ˈefət/|the energy used to do something|attempt, work|noun
+either|/ˈaɪðə/|one or the other|one of two|determiner
+elect|/ɪˈlekt/|to choose someone by voting|vote for, choose|verb
+element|/ˈelɪmənt/|a basic part of something|part, component|noun
+embarrass|/ɪmˈbærəs/|to make someone feel shy or ashamed|make shy, shame|verb
+emerge|/ɪˈmɜːdʒ/|to come out or appear|appear, come out|verb
+emotion|/ɪˈməʊʃn/|a strong feeling|feeling, sentiment|noun
+emphasis|/ˈemfəsɪs/|special importance given to something|stress, importance|noun
+employ|/ɪmˈplɔɪ/|to give someone a job|hire, engage|verb
+empty|/ˈempti/|with nothing inside|vacant, blank|adjective
+enable|/ɪˈneɪbl/|to make something possible|allow, make possible|verb
+encourage|/ɪnˈkʌrɪdʒ/|to give support and confidence|support, motivate|verb
+endless|/ˈendles/|having no end|infinite, unending|adjective
+energy|/ˈenədʒi/|power to do work|power, strength|noun
+engage|/ɪnˈɡeɪdʒ/|to take part in something actively|take part, involve|verb
+engine|/ˈendʒɪn/|a machine that makes power|motor, machine|noun
+enjoy|/ɪnˈdʒɔɪ/|to like doing something|like, love|verb
+enormous|/ɪˈnɔːməs/|extremely large in size|huge, massive|adjective
+enough|/ɪˈnʌf/|as much as needed|sufficient, plenty|adjective
+enter|/ˈentə/|to go into a place|go in, join|verb
+entire|/ɪnˈtaɪə/|whole, with nothing left out|whole, complete|adjective
+environment|/ɪnˈvaɪrənmənt/|the natural world around us|surroundings, nature|noun
+equal|/ˈiːkwəl/|the same in amount or value|same, identical|adjective
+escape|/ɪˈskeɪp/|to get away from something|get away, flee|verb
+especially|/ɪˈspeʃəli/|more than usual; in particular|particularly, mainly|adverb
+essential|/ɪˈsenʃl/|very important and necessary|vital, crucial|adjective
+establish|/ɪˈstæblɪʃ/|to start something new|set up, found|verb
+estimate|/ˈestɪmət/|to guess an amount or value|guess, calculate|verb
+event|/ɪˈvent/|something that happens|happening, occasion|noun
+everyday|/ˈevrideɪ/|ordinary and happening daily|ordinary, daily|adjective
+evidence|/ˈevɪdəns/|proof of something|proof, facts|noun
+exact|/ɪɡˈzækt/|completely correct|precise, accurate|adjective
+examine|/ɪɡˈzæmɪn/|to look at something carefully|inspect, check|verb
+example|/ɪɡˈzɑːmpl/|something that shows what something is like|sample, instance|noun
+excellent|/ˈeksələnt/|very good|superb, outstanding|adjective
+except|/ɪkˈsept/|not including|but, apart from|preposition
+exchange|/ɪksˈtʃeɪndʒ/|to give one thing and get another|swap, trade|verb
+excited|/ɪkˈsaɪtɪd/|feeling very happy and eager|thrilled, eager|adjective
+excuse|/ɪkˈskjuːs/|a reason for something|reason|noun
+exercise|/ˈeksəsaɪz/|physical activity|workout|noun
+exist|/ɪɡˈzɪst/|to be real or alive|be, live|verb
+expect|/ɪkˈspekt/|to think something will happen|anticipate, hope for|verb
+expensive|/ɪkˈspensɪv/|costing a lot of money|costly, pricey|adjective
+experience|/ɪkˈspɪəriəns/|something you live through|event|noun
+expert|/ˈekspɜːt/|someone with a lot of knowledge|specialist, master|noun
+explain|/ɪkˈspleɪn/|to make something clear|clarify, describe|verb
+express|/ɪkˈspres/|to show a feeling or idea|show, convey|verb
+extend|/ɪkˈstend/|to make something longer|lengthen, expand|verb
+extra|/ˈekstrə/|more than usual; added|additional, more|adjective
+extreme|/ɪkˈstriːm/|very great|greatest, severe|adjective
+face|/feɪs/|the front of the head|front, confront|noun
+fact|/fækt/|something true|truth, reality|noun
+fail|/feɪl/|to not succeed|lose|verb
+fair|/feə/|just and honest|just, honest|adjective
+faith|/feɪθ/|strong belief or trust|trust, belief|noun
+fall|/fɔːl/|to drop down|drop|verb
+familiar|/fəˈmɪliə/|known to you|known, well-known|adjective
+famous|/ˈfeɪməs/|known by many people|well-known, celebrated|adjective
+far|/fɑː/|a long distance away|distant, far away|adverb
+fashion|/ˈfæʃn/|a popular style|style, trend|noun
+fast|/fɑːst/|quick|rapid|adjective
+fear|/fɪə/|a feeling of being scared|fright, dread|noun
+feature|/ˈfiːtʃə/|an important part of something|characteristic, aspect|noun
+federal|/ˈfedrəl/|relating to a central government|central, national|adjective
+feeling|/ˈfiːlɪŋ/|an emotion or sense|emotion, sense|noun
+fellow|/ˈfeləʊ/|a man|man, companion|noun
+female|/ˈfiːmeɪl/|a woman or girl|woman, girl|adjective
+fence|/fens/|a barrier around land|barrier, wall|noun
+festival|/ˈfestɪvl/|a celebration or event|celebration, event|noun
+fetch|/fetʃ/|to go and bring something|bring, get|verb
+few|/fjuː/|a small number|not many|adjective
+fiction|/ˈfɪkʃn/|stories that are not true|stories, novels|noun
+field|/fiːld/|an area of land|area|noun
+fierce|/fɪəs/|very strong or angry|strong, intense|adjective
+fight|/faɪt/|to struggle against someone|battle, struggle|verb
+figure|/ˈfɪɡə/|a number|number|noun
+fill|/fɪl/|to make something full|make full, fill up|verb
+final|/ˈfaɪnl/|last|ending|adjective
+finance|/ˈfaɪnæns/|money and banking|money, banking|noun
+find|/faɪnd/|to discover something|discover, locate|verb
+fine|/faɪn/|good; of high quality|penalty|adjective
+finger|/ˈfɪŋɡə/|one of the parts of the hand|digit, part of hand|noun
+finish|/ˈfɪnɪʃ/|to complete something|complete, end|verb
+firm|/fɜːm/|a company|company|noun
+first|/fɜːst/|before all others|initial, earliest|adjective
+fit|/fɪt/|the right size for something|suitable, the right size|adjective
+fix|/fɪks/|to repair something|repair, mend|verb
+flag|/flæɡ/|a piece of cloth with colours|banner, cloth|noun
+flame|/fleɪm/|the bright part of a fire|fire, blaze|noun
+flat|/flæt/|smooth and level, with no bumps|level, even|adjective
+flight|/flaɪt/|a journey by air|trip, flying|noun
+float|/fləʊt/|to stay on water or air|stay afloat, drift|verb
+flood|/flʌd/|a large amount of water covering land|overflow, deluge|noun
+floor|/flɔː/|the bottom of a room|ground, level|noun
+flow|/fləʊ/|to move like water|move, stream|verb
+focus|/ˈfəʊkəs/|to concentrate on something|concentrate, centre on|verb
+follow|/ˈfɒləʊ/|to go after someone|go after|verb
+food|/fuːd/|things people eat|meal, nourishment|noun
+fool|/fuːl/|a person who is not wise|idiot, silly person|noun
+force|/fɔːs/|power or strength|power, strength|noun
+foreign|/ˈfɒrɪn/|from another country|overseas, alien|adjective
+forest|/ˈfɒrɪst/|a large area of trees|woods, woodland|noun
+forget|/fəˈɡet/|to not remember something|not remember, lose track of|verb
+forgive|/fəˈɡɪv/|to stop being angry with someone|pardon, excuse|verb
+form|/fɔːm/|a shape|shape|noun
+formal|/ˈfɔːml/|official and serious|official, proper|adjective
+former|/ˈfɔːmə/|from an earlier time|previous, earlier|adjective
+fortune|/ˈfɔːtʃuːn/|luck|wealth|noun
+forward|/ˈfɔːwəd/|towards the front|ahead, onward|adverb
+found|/faʊnd/|to start something, e.g. a school|start, establish|verb
+frame|/freɪm/|a border around something|border, structure|noun
+free|/friː/|costing nothing|costless, without charge|adjective
+freedom|/ˈfriːdəm/|the right to do what you want|liberty, independence|noun
+frequent|/ˈfriːkwənt/|happening often|often, regular|adjective
+fresh|/freʃ/|new and not old|new, recent|adjective
+friendly|/ˈfrendli/|kind and pleasant|kind, pleasant|adjective
+frighten|/ˈfraɪtn/|to make someone afraid|scare, alarm|verb
+front|/frʌnt/|the part facing forward|fore, forward part|noun
+fruit|/fruːt/|the sweet part of a plant|produce, harvest|noun
+fuel|/ˈfjuːəl/|something burned for energy|energy source, petrol|noun
+full|/fʊl/|with nothing more that can fit|complete, filled|adjective
+fun|/fʌn/|enjoyment or pleasure|enjoyment, pleasure|noun
+function|/ˈfʌŋkʃn/|what something does|purpose, role|noun
+fund|/fʌnd/|money for a purpose|money, finance|noun
+future|/ˈfjuːtʃə/|the time after now|time ahead, tomorrow|noun
+gain|/ɡeɪn/|to get something|get|verb
+game|/ɡeɪm/|an activity for fun|play, sport|noun
+gap|/ɡæp/|a space between things|space, break|noun
+garden|/ˈɡɑːdn/|a place where plants grow|yard, plot|noun
+gather|/ˈɡæðə/|to bring things together|collect, bring together|verb
+general|/ˈdʒenrəl/|about the whole group, not specific|overall|adjective
+generous|/ˈdʒenərəs/|willing to give a lot|giving, kind|adjective
+gentle|/ˈdʒentl/|soft and kind|soft, kind|adjective
+genuine|/ˈdʒenjuɪn/|real and true|real, true|adjective
+gift|/ɡɪft/|something you give to someone|present, donation|noun
+give|/ɡɪv/|to hand something to someone|hand, offer|verb
+glad|/ɡlæd/|happy and pleased|happy, pleased|adjective
+glass|/ɡlɑːs/|a hard clear material|clear material, cup|noun
+global|/ˈɡləʊbl/|relating to the whole world|worldwide, international|adjective
+goal|/ɡəʊl/|something you want to achieve|aim, target|noun
+gold|/ɡəʊld/|a yellow metal|yellow metal|noun
+govern|/ˈɡʌvn/|to rule a place|rule, control|verb
+grab|/ɡræb/|to take something quickly|seize, snatch|verb
+grace|/ɡreɪs/|elegance and kindness|elegance, kindness|noun
+grade|/ɡreɪd/|a level or mark in school|level, mark|noun
+gradual|/ˈɡrædʒuəl/|happening slowly over time|slow, step by step|adjective
+grain|/ɡreɪn/|a small seed|seed, particle|noun
+grand|/ɡrænd/|big and impressive|large, impressive|adjective
+grant|/ɡrɑːnt/|to give something officially|give, allow|verb
+grasp|/ɡrɑːsp/|to hold something|hold|verb
+grateful|/ˈɡreɪtfl/|feeling thankful|thankful, appreciative|adjective
+great|/ɡreɪt/|very good or large|large, excellent|adjective
+green|/ɡriːn/|the colour of grass|colour of grass, verdant|adjective
+greet|/ɡriːt/|to say hello to someone|say hello, welcome|verb
+ground|/ɡraʊnd/|the earth under your feet|earth|noun
+group|/ɡruːp/|a number of people or things together|team, set|noun
+grow|/ɡrəʊ/|to become bigger|increase, develop|verb
+growth|/ɡrəʊθ/|the process of growing|increase, development|noun
+guard|/ɡɑːd/|to protect something|protect, watch over|verb
+guess|/ɡes/|to say something without being sure|suppose, estimate|verb
+guest|/ɡest/|a visitor|visitor, caller|noun
+guide|/ɡaɪd/|a person who shows the way|leader, manual|noun
+guilty|/ˈɡɪlti/|having done something wrong|responsible, at fault|adjective
+habit|/ˈhæbɪt/|something you do regularly|routine, custom|noun
+half|/hɑːf/|one of two equal parts|one of two, middle|noun
+handle|/ˈhændl/|to deal with something with your hands or skill|deal with|verb
+hang|/hæŋ/|to put something up|put up|verb
+happen|/ˈhæpən/|to take place|occur|verb
+hard|/hɑːd/|difficult to do or understand|difficult, tough|adjective
+harm|/hɑːm/|damage or hurt|damage, hurt|noun
+harvest|/ˈhɑːvɪst/|to gather crops|yield|verb
+hate|/heɪt/|to dislike something very much|dislike strongly, detest|verb
+have|/hæv/|to own or possess|own, possess|verb
+head|/hed/|the top of the body|top|noun
+heal|/hiːl/|to become healthy again|recover, cure|verb
+health|/helθ/|the state of the body|well-being, fitness|noun
+hear|/hɪə/|to notice sound with your ears|listen to, notice sound|verb
+heart|/hɑːt/|the organ that pumps blood|organ|noun
+heat|/hiːt/|hotness|warmth|noun
+heavy|/ˈhevi/|weighing a lot|weighty, dense|adjective
+help|/help/|to assist someone|assist, aid|verb
+here|/hɪə/|in this place|now|adverb
+hero|/ˈhɪərəʊ/|a person admired for bravery|brave person, idol|noun
+hide|/haɪd/|to put something where it cannot be seen|conceal, cover|verb
+high|/haɪ/|tall or great|tall, great|adjective
+hill|/hɪl/|a raised area of land|mound, rise|noun
+hint|/hɪnt/|a small clue|clue, suggestion|noun
+history|/ˈhɪstəri/|the study of the past|past, record|noun
+hit|/hɪt/|to strike something|strike, bump|verb
+hold|/həʊld/|to have in your hands|have, keep|verb
+hole|/həʊl/|an empty space in something|gap, opening|noun
+holiday|/ˈhɒlɪdeɪ/|a day off|vacation, break|noun
+honest|/ˈɒnɪst/|truthful and fair|truthful, fair|adjective
+honour|/ˈɒnə/|respect and pride|respect, pride|noun
+hope|/həʊp/|to want something to happen|wish, expect|verb
+horizon|/həˈraɪzn/|where the sky meets the earth|skyline, edge|noun
+horse|/hɔːs/|a large animal people ride|animal, steed|noun
+hospital|/ˈhɒspɪtl/|a place where sick people are treated|clinic, medical centre|noun
+host|/həʊst/|a person who welcomes guests|welcomer, presenter|noun
+however|/haʊˈevə/|but; in a different way|nevertheless|adverb
+huge|/hjuːdʒ/|very big, much larger than usual|enormous, massive|adjective
+human|/ˈhjuːmən/|relating to people|person, people|adjective
+humour|/ˈhjuːmə/|the quality of being funny|fun, comedy|noun
+hunt|/hʌnt/|to chase wild animals to kill them for food or sport|search for, chase|verb
+hurry|/ˈhʌri/|to move quickly|rush, hasten|verb
+hurt|/hɜːt/|to cause pain|injure|verb
+idea|/aɪˈdɪə/|a thought or plan|thought, plan|noun
+identify|/aɪˈdentɪfaɪ/|to recognise something|recognise, name|verb
+ignore|/ɪɡˈnɔː/|to pay no attention to something|pay no attention to, overlook|verb
+ill|/ɪl/|not in good health|sick, unwell|adjective
+image|/ˈɪmɪdʒ/|a picture|picture, photo|noun
+imagine|/ɪˈmædʒɪn/|to form a picture in your mind|picture, think of|verb
+immediate|/ɪˈmiːdiət/|happening at once|instant, at once|adjective
+impact|/ˈɪmpækt/|a strong effect|effect, influence|noun
+important|/ɪmˈpɔːtnt/|having great value|significant, vital|adjective
+improve|/ɪmˈpruːv/|to make something better|make better, enhance|verb
+include|/ɪnˈkluːd/|to have something as part of it|contain, involve|verb
+increase|/ɪnˈkriːs/|to become larger|grow, rise|verb
+indeed|/ɪnˈdiːd/|really, certainly|really, certainly|adverb
+indicate|/ˈɪndɪkeɪt/|to show or point to something|show, point to|verb
+individual|/ˌɪndɪˈvɪdʒuəl/|a single person|single person, person|noun
+industry|/ˈɪndəstri/|businesses that make things|business, trade|noun
+influence|/ˈɪnfluəns/|the power to affect someone|power, effect|noun
+inform|/ɪnˈfɔːm/|to tell someone about something|tell, notify|verb
+initial|/ɪˈnɪʃl/|first, at the beginning|first, beginning|adjective
+injury|/ˈɪndʒəri/|harm to the body|harm, wound|noun
+inner|/ˈɪnə/|inside|internal|adjective
+insect|/ˈɪnsekt/|a small animal with six legs|bug, small animal|noun
+inside|/ɪnˈsaɪd/|within something|within, indoors|adverb
+insight|/ˈɪnsaɪt/|a deep understanding|understanding, awareness|noun
+inspire|/ɪnˈspaɪə/|to give someone new ideas|motivate, encourage|verb
+install|/ɪnˈstɔːl/|to put something in place, e.g. a machine|set up, put in|verb
+instance|/ˈɪnstəns/|an example of something|example, case|noun
+instead|/ɪnˈsted/|in place of something|in place of, rather|adverb
+instrument|/ˈɪnstrəmənt/|a tool|tool|noun
+intend|/ɪnˈtend/|to plan to do something|plan, aim|verb
+interest|/ˈɪntrəst/|curiosity|attention|noun
+international|/ˌɪntəˈnæʃnəl/|between countries|global, worldwide|adjective
+interrupt|/ˌɪntəˈrʌpt/|to stop someone speaking|stop, break in|verb
+interview|/ˈɪntəvjuː/|a meeting to ask questions|meeting, questioning|noun
+introduce|/ˌɪntrəˈdjuːs/|to present someone or something|present, show|verb
+invent|/ɪnˈvent/|to create something new|create, design|verb
+invest|/ɪnˈvest/|to put money into something|put money in, fund|verb
+invite|/ɪnˈvaɪt/|to ask someone to come|ask, call|verb
+involve|/ɪnˈvɒlv/|to include someone in something|include, engage|verb
+iron|/ˈaɪən/|a metal|metal, press|noun
+island|/ˈaɪlənd/|land with water all around|land in water, isle|noun
+issue|/ˈɪʃuː/|a problem to discuss|problem|noun
+item|/ˈaɪtəm/|a single thing|thing, object|noun
+itself|/ɪtˈself/|the thing in question|the thing itself|pronoun
+jacket|/ˈdʒækɪt/|a short coat|coat, outer wear|noun
+jealous|/ˈdʒeləs/|wanting what someone else has|envious, resentful|adjective
+jewel|/ˈdʒuːəl/|a precious stone|gem, precious stone|noun
+join|/dʒɔɪn/|to become part of something|become part of, connect|verb
+joint|/dʒɔɪnt/|shared|connection|adjective
+joke|/dʒəʊk/|something funny|funny story, humour|noun
+journal|/ˈdʒɜːnl/|a diary|diary|noun
+journey|/ˈdʒɜːni/|a trip from one place to another|trip, travel|noun
+joy|/dʒɔɪ/|great happiness|happiness, delight|noun
+judge|/dʒʌdʒ/|a person who decides in court|decider, magistrate|noun
+juice|/dʒuːs/|liquid from fruit|liquid, drink|noun
+jump|/dʒʌmp/|to push yourself into the air|leap, hop|verb
+just|/dʒʌst/|only, and nothing more|only, merely|adverb
+keep|/kiːp/|to have and not give away|have, hold|verb
+key|/kiː/|something that opens a lock|opener, crucial|noun
+kick|/kɪk/|to hit with your foot|hit with foot, boot|verb
+kind|/kaɪnd/|friendly and caring|friendly, nice|adjective
+king|/kɪŋ/|a male ruler|male ruler, monarch|noun
+kitchen|/ˈkɪtʃɪn/|a room for cooking|cooking room, cookery|noun
+knee|/niː/|the joint in the leg|leg joint, joint|noun
+knife|/naɪf/|a tool for cutting|cutter, blade|noun
+knock|/nɒk/|to hit something to make a sound|hit, tap|verb
+know|/nəʊ/|to have information|have knowledge, understand|verb
+knowledge|/ˈnɒlɪdʒ/|information and understanding|information, understanding|noun
+labour|/ˈleɪbə/|work, especially hard work|work, effort|noun
+lack|/læk/|not having enough of something|not enough, shortage|noun
+ladder|/ˈlædə/|a tool for climbing|climbing tool, steps|noun
+lady|/ˈleɪdi/|a woman|woman, female|noun
+lake|/leɪk/|a large area of water|reservoir, pond|noun
+lamp|/læmp/|a device that gives light|light, light source|noun
+land|/lænd/|the ground, not the sea|ground, earth|noun
+language|/ˈlæŋɡwɪdʒ/|words used to communicate|speech, tongue|noun
+large|/lɑːdʒ/|big in size|big, huge|adjective
+last|/lɑːst/|coming after all others|final, latest|adjective
+late|/leɪt/|after the usual time|after time, delayed|adjective
+laugh|/lɑːf/|to make a happy sound|chuckle, giggle|verb
+launch|/lɔːntʃ/|to start something, e.g. a product|start, begin|verb
+law|/lɔː/|rules made by a government|rules, rules of law|noun
+lazy|/ˈleɪzi/|not wanting to work|idle, not active|adjective
+lead|/liːd/|to guide a person or group|guide, direct|verb
+leaf|/liːf/|a part of a plant|plant part, foliage|noun
+learn|/lɜːn/|to get knowledge|gain knowledge, study|verb
+least|/liːst/|smallest in amount|smallest, minimum|adjective
+leather|/ˈleðə/|material made from animal skin|skin material, hide|noun
+leave|/liːv/|to go away from a place|go away, depart|verb
+lecture|/ˈlektʃə/|a talk given to a group|talk, speech|noun
+left|/left/|on the side of your heart|side, opposite of right|adjective
+leg|/leɡ/|a part of the body for walking|limb, part of body|noun
+legal|/ˈliːɡl/|allowed by law|allowed, lawful|adjective
+lemon|/ˈlemən/|a yellow fruit|sour fruit, citrus|noun
+lend|/lend/|to give something for a time|give temporarily, loan|verb
+length|/leŋθ/|how long something is|size, extent|noun
+less|/les/|a smaller amount|smaller, fewer|adjective
+lesson|/ˈlesn/|something you learn|class, teaching|noun
+letter|/ˈletə/|a written message|message|noun
+level|/ˈlevl/|a height or stage|height, stage|noun
+library|/ˈlaɪbrəri/|a place with books|book place, reading room|noun
+lie|/laɪ/|to say something untrue|say untrue|verb
+life|/laɪf/|the time you are alive|existence, living|noun
+lift|/lɪft/|to raise something up|raise, pick up|verb
+light|/laɪt/|brightness that lets you see|brightness, glow|noun
+like|/laɪk/|to enjoy something|enjoy, love|verb
+likely|/ˈlaɪkli/|probably|expected|adjective
+limit|/ˈlɪmɪt/|the most allowed|maximum, boundary|noun
+line|/laɪn/|a long mark|mark|noun
+link|/lɪŋk/|a connection between things|connection, join|noun
+lion|/ˈlaɪən/|a large wild cat|wild cat, big cat|noun
+lip|/lɪp/|a part of the mouth|mouth part, edge|noun
+liquid|/ˈlɪkwɪd/|a substance like water|fluid, water-like|adjective
+list|/lɪst/|things written in order|record, catalogue|noun
+listen|/ˈlɪsn/|to pay attention to sound|hear, pay attention|verb
+literature|/ˈlɪtrətʃə/|written works like books|books, writing|noun
+little|/ˈlɪtl/|small in size|small, tiny|adjective
+live|/lɪv/|to be alive|reside|verb
+load|/ləʊd/|something carried|burden|noun
+local|/ˈləʊkl/|near where you live|nearby, regional|adjective
+locate|/ləʊˈkeɪt/|to find the place of something|find, place|verb
+lock|/lɒk/|a device to keep something shut|fastener, bolt|noun
+log|/lɒɡ/|a thick piece of wood cut from a tree|timber, piece of wood|noun
+lonely|/ˈləʊnli/|sad because you are alone|sad alone, isolated|adjective
+long|/lɒŋ/|great in length|lengthy, extended|adjective
+look|/lʊk/|to use your eyes to see|see, watch|verb
+loose|/luːs/|not tight|free|adjective
+lose|/luːz/|to not have something any more|misplace, fail|verb
+loss|/lɒs/|when you lose something|losing, damage|noun
+lot|/lɒt/|a large number of things or people|a lot, many|noun
+loud|/laʊd/|making a lot of noise|noisy, strong sound|adjective
+love|/lʌv/|a strong feeling of liking|affection, care|noun
+low|/ləʊ/|not high|small|adjective
+loyal|/ˈlɔɪəl/|faithful to someone|faithful, true|adjective
+luck|/lʌk/|good or bad fortune|fortune, chance|noun
+lunch|/lʌntʃ/|a meal in the middle of the day|midday meal, meal|noun
+machine|/məˈʃiːn/|a device that does work|device, engine|noun
+magic|/ˈmædʒɪk/|the power to do impossible things|power, trick|noun
+mail|/meɪl/|letters and parcels|letters, post|noun
+main|/meɪn/|most important|chief|adjective
+major|/ˈmeɪdʒə/|important or large|important, large|adjective
+make|/meɪk/|to create something|create, produce|verb
+male|/meɪl/|a man or boy|man, boy|adjective
+manage|/ˈmænɪdʒ/|to control or deal with something|control, handle|verb
+manner|/ˈmænə/|the way in which a person behaves or does something|way, style|noun
+many|/ˈmeni/|a large number|numerous|adjective
+map|/mæp/|a drawing of an area|drawing, chart|noun
+mark|/mɑːk/|a sign|sign|noun
+market|/ˈmɑːkɪt/|a place to buy and sell|shop, bazaar|noun
+marry|/ˈmæri/|to become husband or wife|wed, unite|verb
+master|/ˈmɑːstə/|an expert|expert|noun
+match|/mætʃ/|a game|game, fit|noun
+material|/məˈtɪəriəl/|what something is made of|substance, matter|noun
+matter|/ˈmætə/|a subject|subject|noun
+may|/meɪ/|used to say that something is allowed|allowed, permitted|verb
+meal|/miːl/|food eaten at a time|food, dish|noun
+mean|/miːn/|to have a meaning|signify|verb
+measure|/ˈmeʒə/|to find the size of something|size, gauge|verb
+meat|/miːt/|food from animals|animal food, flesh|noun
+media|/ˈmiːdiə/|ways of sharing news|news, press|noun
+medical|/ˈmedɪkl/|relating to health|health, clinical|adjective
+meet|/miːt/|to come together with someone|come together, encounter|verb
+member|/ˈmembə/|a person in a group|person in group, part|noun
+memory|/ˈmeməri/|the ability to remember|recollection, recall|noun
+mention|/ˈmenʃn/|to talk about something briefly|talk about, refer to|verb
+menu|/ˈmenjuː/|a list of food|food list, list|noun
+message|/ˈmesɪdʒ/|words sent to someone|note, communication|noun
+method|/ˈmeθəd/|a planned way of doing something|way, approach|noun
+middle|/ˈmɪdl/|in the centre|centre, middle part|adjective
+might|/maɪt/|used to say that something is possible|possibly, could|verb
+mild|/maɪld/|not strong; gentle|gentle, soft|adjective
+mile|/maɪl/|a unit of distance|distance unit, measure|noun
+milk|/mɪlk/|a white drink from animals|white drink, dairy|noun
+mind|/maɪnd/|your thoughts and brain|thoughts, brain|noun
+mine|/maɪn/|belonging to me|my own|pronoun
+minister|/ˈmɪnɪstə/|a government official|official, leader|noun
+minor|/ˈmaɪnə/|small or not important|small, slight|adjective
+minute|/ˈmɪnɪt/|60 seconds|moment|noun
+mirror|/ˈmɪrə/|a surface that shows your image|reflective surface, glass|noun
+miss|/mɪs/|to not hit|long for|verb
+mistake|/mɪˈsteɪk/|something wrong|error, wrong|noun
+mix|/mɪks/|to combine things|combine, blend|verb
+model|/ˈmɒdl/|an example to copy|example, pattern|noun
+modern|/ˈmɒdn/|of the present time|present, new|adjective
+moment|/ˈməʊmənt/|a short time|short time, instant|noun
+money|/ˈmʌni/|coins and notes used to buy things|cash, currency|noun
+month|/mʌnθ/|a period of about 30 days|period, time|noun
+mood|/muːd/|how you feel|feeling, state|noun
+moon|/muːn/|the object in the sky at night|night object, satellite|noun
+moral|/ˈmɒrəl/|about right and wrong|right, ethical|adjective
+more|/mɔː/|a greater amount|greater, additional|adverb
+morning|/ˈmɔːnɪŋ/|the early part of the day|early day, dawn|noun
+most|/məʊst/|the greatest amount|greatest, almost all|adjective
+motion|/ˈməʊʃn/|movement|action|noun
+motor|/ˈməʊtə/|an engine|engine, machine|noun
+mountain|/ˈmaʊntɪn/|a very high hill|high hill, peak|noun
+mouse|/maʊs/|a small animal|small animal, device|noun
+mouth|/maʊθ/|the opening in the face for eating|opening, face part|noun
+move|/muːv/|to go to another place|go, change place|verb
+movie|/ˈmuːvi/|a film|film, picture|noun
+much|/mʌtʃ/|a large amount of something that cannot be counted|a large amount, a lot|adverb
+music|/ˈmjuːzɪk/|sounds made by instruments or voices|sounds, song|noun
+must|/mʌst/|used to say that something is necessary|have to, need to|verb
+mutual|/ˈmjuːtʃuəl/|shared by two people|shared, common|adjective
+myself|/maɪˈself/|me, in person|me, personally|pronoun
+narrow|/ˈnærəʊ/|not wide|slim|adjective
+nation|/ˈneɪʃn/|a country|country, state|noun
+native|/ˈneɪtɪv/|born in a place|born in|adjective
+natural|/ˈnætʃrəl/|from nature, not made by people|from nature, normal|adjective
+nature|/ˈneɪtʃə/|the natural world|natural world, outdoors|noun
+near|/nɪə/|close to something|close, nearby|adverb
+nearly|/ˈnɪəli/|almost|about|adverb
+necessary|/ˈnesəsəri/|needed|required|adjective
+neck|/nek/|the part joining head and body|nape|noun
+need|/niːd/|to require something|require, want|verb
+negative|/ˈneɡətɪv/|bad or harmful|bad, harmful|adjective
+neighbour|/ˈneɪbə/|a person living next door|person next door, local|noun
+neither|/ˈnaɪðə/|not one nor the other|not one, not either|determiner
+nervous|/ˈnɜːvəs/|worried and tense|worried, tense|adjective
+net|/net/|a material with holes|mesh|noun
+network|/ˈnetwɜːk/|a group of connected things|system, web|noun
+never|/ˈnevə/|not at any time|not ever, at no time|adverb
+news|/njuːz/|information about recent events|information, reports|noun
+next|/nekst/|coming after this one|following, after|adjective
+nice|/naɪs/|pleasant and kind|pleasant, kind|adjective
+night|/naɪt/|the dark part of the day|dark, evening|noun
+no|/nəʊ/|not any; the answer is no|none|determiner
+nobody|/ˈnəʊbədi/|no person|no one|noun
+noise|/nɔɪz/|a sound, often loud|sound, loud sound|noun
+none|/nʌn/|not any; not one|nothing|pronoun
+noon|/nuːn/|12 o'clock in the day|midday, 12 o'clock|noun
+normal|/ˈnɔːml/|usual and ordinary|usual, ordinary|adjective
+north|/nɔːθ/|one of the four main directions, towards the top of a map|northerly direction|noun
+nose|/nəʊz/|the part of the face for smelling|face part, smell organ|noun
+note|/nəʊt/|a short written record|record, memo|noun
+notice|/ˈnəʊtɪs/|to see something|see|verb
+novel|/ˈnɒvl/|a long story book|long story, book|noun
+now|/naʊ/|at this moment|currently|adverb
+number|/ˈnʌmbə/|a figure|figure, count|noun
+nurse|/nɜːs/|a person who cares for sick people|carer, medical worker|noun
+nut|/nʌt/|a hard fruit|hard fruit, small piece|noun
+object|/ˈɒbdʒɪkt/|a thing|thing|noun
+observe|/əbˈzɜːv/|to watch something carefully|watch, see|verb
+obtain|/əbˈteɪn/|to get something after trying or asking for it|get, acquire|verb
+obvious|/ˈɒbviəs/|easy to see or understand|clear, plain|adjective
+occasion|/əˈkeɪʒn/|a special time or event|special time, event|noun
+occupy|/ˈɒkjupaɪ/|to fill a space or time|fill, take up|verb
+occur|/əˈkɜː/|to happen|take place|verb
+ocean|/ˈəʊʃn/|a very large sea|large sea, water|noun
+offer|/ˈɒfə/|to give something to someone|give, propose|verb
+office|/ˈɒfɪs/|a place where people work|workplace, room|noun
+officer|/ˈɒfɪsə/|a person in authority|official, person in charge|noun
+official|/əˈfɪʃl/|from a person in authority|formal, authorised|adjective
+often|/ˈɒfn/|many times|frequently|adverb
+oil|/ɔɪl/|a thick liquid used for fuel|fuel, liquid|noun
+once|/wʌns/|one time|a single time|adverb
+one|/wʌn/|the number 1|number 1, single|adjective
+only|/ˈəʊnli/|nothing more than|nothing more, just|adverb
+open|/ˈəʊpən/|not closed|available|adjective
+operate|/ˈɒpəreɪt/|to work or control something|work, control|verb
+opinion|/əˈpɪniən/|what you think about something|view, belief|noun
+opportunity|/ˌɒpəˈtjuːnəti/|a chance to do something|chance, opening|noun
+oppose|/əˈpəʊz/|to be against something|be against, resist|verb
+option|/ˈɒpʃn/|a choice|choice, alternative|noun
+order|/ˈɔːdə/|a request|request|noun
+ordinary|/ˈɔːdnri/|normal and not special|normal, usual|adjective
+organise|/ˈɔːɡənaɪz/|to arrange things in order|arrange, plan|verb
+origin|/ˈɒrɪdʒɪn/|where something comes from|source, beginning|noun
+other|/ˈʌðə/|different from this one|different, another|adjective
+otherwise|/ˈʌðəwaɪz/|if not; in another way|differently|adverb
+ought|/ɔːt/|used to say what is right or expected|should|verb
+our|/aʊə/|belonging to us|ours|adjective
+out|/aʊt/|outside|away|adverb
+outcome|/ˈaʊtkʌm/|the result of something|result, effect|noun
+outer|/ˈaʊtə/|on the outside|outside, external|adjective
+outline|/ˈaʊtlaɪn/|the shape of something|shape|noun
+outside|/aʊtˈsaɪd/|not inside|outdoors|adverb
+over|/ˈəʊvə/|above something|above, on top|adverb
+overall|/ˌəʊvəˈɔːl/|in general|total|adjective
+owe|/əʊ/|to have to pay someone|have to pay, be in debt|verb
+own|/əʊn/|to have something as yours|possess, have|verb
+pace|/peɪs/|the speed of something|speed, rate|noun
+pack|/pæk/|to put things in a bag|put in bag|verb
+page|/peɪdʒ/|one side of paper in a book|side of paper, sheet|noun
+pain|/peɪn/|a bad feeling in the body|hurt, ache|noun
+paint|/peɪnt/|to cover a surface with coloured liquid|coat, colour|verb
+pair|/peə/|two things together|two, couple|noun
+palace|/ˈpælɪs/|a large home for a king|large home, castle|noun
+pale|/peɪl/|light in colour|light, white|adjective
+panel|/ˈpænl/|a flat part of something|flat part, board|noun
+paper|/ˈpeɪpə/|material for writing on|material, sheet|noun
+parent|/ˈpeərənt/|a mother or father|mother or father, mum or dad|noun
+park|/pɑːk/|a place with grass and trees|green place, garden|noun
+part|/pɑːt/|a piece of something|piece, section|noun
+participate|/pɑːˈtɪsɪpeɪt/|to take part in something with others|take part, join in|verb
+particular|/pəˈtɪkjələ/|special and specific|special, specific|adjective
+partner|/ˈpɑːtnə/|a person you work with|companion, colleague|noun
+party|/ˈpɑːti/|a celebration|celebration|noun
+pass|/pɑːs/|to go by something|go by, go past|verb
+passage|/ˈpæsɪdʒ/|a part of a text|text part|noun
+past|/pɑːst/|before now|earlier|adjective
+path|/pɑːθ/|a way to walk|way, track|noun
+patience|/ˈpeɪʃns/|the ability to wait calmly|calm waiting, tolerance|noun
+patient|/ˈpeɪʃnt/|able to wait calmly|calm|adjective
+pattern|/ˈpætn/|a repeated design|design, model|noun
+pause|/pɔːz/|to stop for a short time|stop briefly, break|verb
+pay|/peɪ/|to give money for something|give money, settle|verb
+peace|/piːs/|calm without fighting|calm, quiet|noun
+peak|/piːk/|the highest point of something, especially a mountain|top, summit|noun
+pen|/pen/|a tool for writing|writing tool, writer|noun
+people|/ˈpiːpl/|humans|persons|noun
+per|/pə/|for each|by|preposition
+perfect|/ˈpɜːfɪkt/|without any faults|flawless, ideal|adjective
+perform|/pəˈfɔːm/|to do something in front of people|do, carry out|verb
+perhaps|/pəˈhæps/|maybe|possibly|adverb
+period|/ˈpɪəriəd/|a length of time|time, era|noun
+permanent|/ˈpɜːmənənt/|lasting for ever|lasting, forever|adjective
+permit|/pəˈmɪt/|to allow something|allow, let|verb
+person|/ˈpɜːsn/|a human|human, individual|noun
+personal|/ˈpɜːsnl/|belonging to one person|private, own|adjective
+persuade|/pəˈsweɪd/|to make someone agree|convince, win over|verb
+phone|/fəʊn/|a device for talking|device, telephone|noun
+photo|/ˈfəʊtəʊ/|a picture taken by a camera|picture, image|noun
+phrase|/freɪz/|a group of words|group of words, expression|noun
+physical|/ˈfɪzɪkl/|relating to the body|bodily, real|adjective
+piano|/piˈænəʊ/|a musical instrument|musical instrument, keys|noun
+pick|/pɪk/|to choose something|choose, select|verb
+picture|/ˈpɪktʃə/|an image|image, photo|noun
+piece|/piːs/|a part of something|part, bit|noun
+pig|/pɪɡ/|a farm animal kept for meat|farm animal, swine|noun
+pilot|/ˈpaɪlət/|a person who flies a plane|flier, driver|noun
+pin|/pɪn/|a small metal point|small point, fastener|noun
+pink|/pɪŋk/|a light red colour|light red, rose|adjective
+pipe|/paɪp/|a tube for liquid|tube, channel|noun
+pitch|/pɪtʃ/|how high a sound is|sound level|noun
+place|/pleɪs/|a location|location, spot|noun
+plain|/pleɪn/|simple, with nothing extra|simple, basic|adjective
+plan|/plæn/|an idea for what to do|idea, scheme|noun
+plane|/pleɪn/|an aircraft|aircraft, aeroplane|noun
+planet|/ˈplænɪt/|a world in space|world, heavenly body|noun
+plant|/plɑːnt/|a living thing that grows in soil|living thing, flora|noun
+plastic|/ˈplæstɪk/|a man-made material|man-made material, synthetic|noun
+plate|/pleɪt/|a flat dish|dish, flat dish|noun
+play|/pleɪ/|to do something for fun|have fun, enjoy yourself|verb
+pleasant|/ˈpleznt/|nice and enjoyable|nice, enjoyable|adjective
+please|/pliːz/|to make someone happy|satisfy, delight|verb
+plenty|/ˈplenti/|more than enough of something|a large amount, lots|noun
+plot|/plɒt/|a secret plan|plan|noun
+plus|/plʌs/|in addition to|and|preposition
+pocket|/ˈpɒkɪt/|a small bag in clothes|small bag, pouch|noun
+poem|/ˈpəʊɪm/|a piece of poetry|poetry, verse|noun
+point|/pɔɪnt/|a sharp end|sharp end|noun
+police|/pəˈliːs/|people who keep order|law officers, force|noun
+policy|/ˈpɒləsi/|a plan of action|plan, rule|noun
+polite|/pəˈlaɪt/|having good manners|well-mannered, courteous|adjective
+politics|/ˈpɒlɪtɪks/|the business of government|government, affairs|noun
+pool|/puːl/|a place with water for swimming|swimming place, water|noun
+poor|/pʊə/|having little money|needing money, low|adjective
+popular|/ˈpɒpjələ/|liked by many people|liked, well-known|adjective
+population|/ˌpɒpjuˈleɪʃn/|the people in a place|people, inhabitants|noun
+port|/pɔːt/|a place where ships stop|harbour, dock|noun
+pose|/pəʊz/|to stand in a position|stand, sit|verb
+position|/pəˈzɪʃn/|where something is|place|noun
+positive|/ˈpɒzətɪv/|good; hopeful|sure|adjective
+possess|/pəˈzes/|to own something|own, have|verb
+possible|/ˈpɒsəbl/|able to happen|able, likely|adjective
+post|/pəʊst/|letters and packages sent by mail|mail, letters|noun
+pot|/pɒt/|a container for cooking|container, vessel|noun
+power|/ˈpaʊə/|strength or control|strength, control|noun
+practical|/ˈpræktɪkl/|useful in real life|useful, real|adjective
+practice|/ˈpræktɪs/|to do something again and again|train, rehearse|verb
+praise|/preɪz/|to say something good about someone|say good about, commend|verb
+pray|/preɪ/|to talk to God|worship|verb
+precise|/prɪˈsaɪs/|exact and correct|exact, accurate|adjective
+predict|/prɪˈdɪkt/|to say what will happen|forecast|verb
+prefer|/prɪˈfɜː/|to like one thing more|like more, favour|verb
+prepare|/prɪˈpeə/|to get ready|make ready|verb
+present|/ˈpreznt/|here, not absent|here, attending|adjective
+president|/ˈprezɪdənt/|a leader of a country|leader, head|noun
+press|/pres/|to push something|push|verb
+pressure|/ˈpreʃə/|force that pushes on something|force, weight|noun
+pretend|/prɪˈtend/|to act as if something is true|act as if, fake|verb
+pretty|/ˈprɪti/|nice to look at|nice, attractive|adjective
+prevent|/prɪˈvent/|to stop something happening|stop, avoid|verb
+previous|/ˈpriːviəs/|coming before|before, earlier|adjective
+price|/praɪs/|how much something costs|cost, amount|noun
+pride|/praɪd/|a feeling of being proud|proud feeling, honour|noun
+priest|/priːst/|a religious leader|religious leader, clergyman|noun
+primary|/ˈpraɪməri/|main or first|main, first|adjective
+prime|/praɪm/|most important; best|main|adjective
+prince|/prɪns/|the son of a king|king's son, royal|noun
+print|/prɪnt/|to put words on paper with a machine|put on paper, publish|verb
+prior|/ˈpraɪə/|happening before something else|before, earlier|adjective
+prison|/ˈprɪzn/|a place where people are kept as punishment|jail, lock-up|noun
+private|/ˈpraɪvət/|not public|personal|adjective
+prize|/praɪz/|something given to a winner|award, reward|noun
+probably|/ˈprɒbəbli/|likely|maybe|adverb
+problem|/ˈprɒbləm/|a difficulty|difficulty, issue|noun
+procedure|/prəˈsiːdʒə/|the official steps for doing something|way, process|noun
+proceed|/prəˈsiːd/|to continue|go on|verb
+process|/ˈprəʊses/|a series of actions|series, method|noun
+produce|/prəˈdjuːs/|to make something|make, create|verb
+product|/ˈprɒdʌkt/|something made to sell|item, goods|noun
+profession|/prəˈfeʃn/|a job needing training|job, career|noun
+profit|/ˈprɒfɪt/|money made after costs|money made, gain|noun
+programme|/ˈprəʊɡræm/|a plan|plan|noun
+progress|/ˈprəʊɡres/|improvement over time|improvement, advance|noun
+project|/ˈprɒdʒekt/|a plan or task|plan, task|noun
+promise|/ˈprɒmɪs/|to say you will do something|say you will, vow|verb
+prompt|/prɒmpt/|done quickly, without delay|quick, fast|adjective
+proper|/ˈprɒpə/|correct and suitable|correct, suitable|adjective
+property|/ˈprɒpəti/|something you own|belongings, estate|noun
+propose|/prəˈpəʊz/|to suggest something|suggest, offer|verb
+protect|/prəˈtekt/|to keep safe|guard|verb
+proud|/praʊd/|feeling pleased about something|pleased, honoured|adjective
+prove|/pruːv/|to show something is true|show, demonstrate|verb
+provide|/prəˈvaɪd/|to give something needed|give, supply|verb
+public|/ˈpʌblɪk/|for everyone|open|adjective
+publish|/ˈpʌblɪʃ/|to make something public|make public, print|verb
+pull|/pʊl/|to move something towards you|move towards, drag|verb
+purpose|/ˈpɜːpəs/|the reason for something|reason, aim|noun
+pursue|/pəˈsjuː/|to follow or try to get something|follow, chase|verb
+push|/pʊʃ/|to move something away|move away, shove|verb
+put|/pʊt/|to place something|place, set|verb
+quality|/ˈkwɒləti/|how good something is|goodness, standard|noun
+quantity|/ˈkwɒntəti/|how much of something|amount, number|noun
+quarter|/ˈkwɔːtə/|one of four parts|one of four, fourth|noun
+queen|/kwiːn/|a female ruler|sovereign, monarch|noun
+question|/ˈkwestʃən/|something you ask|ask, query|noun
+quick|/kwɪk/|fast|rapid|adjective
+quiet|/ˈkwaɪət/|not loud|silent|adjective
+quite|/kwaɪt/|very, but not completely|very, fairly|adverb
+race|/reɪs/|a competition to be fastest|competition, contest|noun
+radio|/ˈreɪdiəʊ/|a device for sound|device, broadcast|noun
+rail|/reɪl/|a metal bar for trains|metal bar, track|noun
+rain|/reɪn/|water falling from clouds|water, shower|noun
+raise|/reɪz/|to lift something up|lift, increase|verb
+range|/reɪndʒ/|a set of things|set|noun
+rank|/ræŋk/|a position in a list|position, grade|noun
+rapid|/ˈræpɪd/|very fast|quick|adjective
+rare|/reə/|not common|unusual|adjective
+rate|/reɪt/|how fast something happens|speed|noun
+rather|/ˈrɑːðə/|more than a little|more, quite|adverb
+reach|/riːtʃ/|to get to a place|get to, arrive at|verb
+react|/riˈækt/|to respond to something|respond, answer|verb
+read|/riːd/|to look at words|peruse|verb
+ready|/ˈredi/|prepared|set|adjective
+real|/ˈriːəl/|true, not fake|true, genuine|adjective
+realise|/ˈrɪəlaɪz/|to understand something|understand, notice|verb
+really|/ˈrɪəli/|truly|very|adverb
+reason|/ˈriːzn/|why something happens|why, cause|noun
+receive|/rɪˈsiːv/|to be given something|get, accept|verb
+recent|/ˈriːsnt/|not long ago|new|adjective
+recognise|/ˈrekəɡnaɪz/|to know something you have seen before|know, identify|verb
+record|/rɪˈkɔːd/|to write down information|write down, note|verb
+recover|/rɪˈkʌvə/|to get better|heal|verb
+reduce|/rɪˈdjuːs/|to make smaller|cut|verb
+refer|/rɪˈfɜː/|to mention something or point to it|talk about, mention|verb
+reflect|/rɪˈflekt/|to think carefully and quietly about something|think, consider|verb
+refuse|/rɪˈfjuːz/|to say no|decline|verb
+regard|/rɪˈɡɑːd/|to think of something in a way|think of, consider|verb
+region|/ˈriːdʒn/|an area of a country|area, zone|noun
+regular|/ˈreɡjələ/|happening often, at fixed times|often, normal|adjective
+relate|/rɪˈleɪt/|to connect things|connect, link|verb
+relax|/rɪˈlæks/|to rest and feel calm|rest, unwind|verb
+release|/rɪˈliːs/|to let something go|let go, free|verb
+relevant|/ˈreləvənt/|connected to the topic|connected, related|adjective
+relief|/rɪˈliːf/|a feeling of comfort after worry|comfort, ease|noun
+rely|/rɪˈlaɪ/|to trust someone|trust, depend on|verb
+remain|/rɪˈmeɪn/|to stay|continue|verb
+remember|/rɪˈmembə/|to keep something in mind|keep in mind, recall|verb
+remind|/rɪˈmaɪnd/|to help someone remember|help remember, prompt|verb
+remove|/rɪˈmuːv/|to take something away|take away, delete|verb
+rent|/rent/|money paid to use a place|money paid, lease|noun
+repair|/rɪˈpeə/|to fix something|fix, mend|verb
+repeat|/rɪˈpiːt/|to do something again|do again, say again|verb
+replace|/rɪˈpleɪs/|to put something new in place of old|put new, substitute|verb
+reply|/rɪˈplaɪ/|to answer in words|respond|verb
+report|/rɪˈpɔːt/|to tell people about something|tell, describe|verb
+represent|/ˌreprɪˈzent/|to stand for something|stand for, symbolise|verb
+request|/rɪˈkwest/|a polite act of asking for something|appeal, plea|noun
+require|/rɪˈkwaɪə/|to need something|need, demand|verb
+research|/rɪˈsɜːtʃ/|careful study|study, investigation|noun
+respect|/rɪˈspekt/|to admire someone|admire, honour|verb
+respond|/rɪˈspɒnd/|to answer, e.g. to a question or event|reply|verb
+responsible|/rɪˈspɒnsəbl/|in charge of something|in charge, accountable|adjective
+rest|/rest/|what is left|remainder|noun
+result|/rɪˈzʌlt/|what happens because of something|outcome, effect|noun
+return|/rɪˈtɜːn/|to go back|come back|verb
+reveal|/rɪˈviːl/|to show something hidden|show, uncover|verb
+rich|/rɪtʃ/|having a lot of money|wealthy, well-off|adjective
+ride|/raɪd/|to sit on something moving|sit on, travel|verb
+right|/raɪt/|correct and true|correct, true|adjective
+ring|/rɪŋ/|a circle|circle|noun
+rise|/raɪz/|to go up|increase|verb
+risk|/rɪsk/|the chance of harm or loss|chance, danger|noun
+river|/ˈrɪvə/|a large stream of water|stream, waterway|noun
+road|/rəʊd/|a way for cars|way, street|noun
+rock|/rɒk/|a hard stone|stone, boulder|noun
+role|/rəʊl/|a part in a play|part|noun
+roll|/rəʊl/|to turn over and over|turn over, spin|verb
+roof|/ruːf/|the top of a building|top, cover|noun
+room|/ruːm/|a space in a building|space, chamber|noun
+root|/ruːt/|the part of a plant underground|underground part, base|noun
+rough|/rʌf/|not smooth|uneven|adjective
+round|/raʊnd/|in a circle|circular|adjective
+route|/ruːt/|a way to go|way, path|noun
+row|/rəʊ/|a line of things|line, series|noun
+royal|/ˈrɔɪəl/|relating to a king or queen|kingly, regal|adjective
+rub|/rʌb/|to move your hand over something|move over, stroke|verb
+rude|/ruːd/|not polite|impolite|adjective
+rule|/ruːl/|a law|law|noun
+run|/rʌn/|to move fast on foot|move fast, sprint|verb
+rural|/ˈrʊərəl/|relating to the countryside|countryside, country|adjective
+rush|/rʌʃ/|to hurry|hasten|verb
+sad|/sæd/|unhappy|sorrowful|adjective
+safe|/seɪf/|not in danger|secure|adjective
+sail|/seɪl/|to travel by boat|navigate|verb
+sale|/seɪl/|the act of selling|selling, deal|noun
+salt|/sɔːlt/|a white mineral for food|white mineral, seasoning|noun
+same|/seɪm/|not different|identical|adjective
+sample|/ˈsɑːmpl/|a small part to try|small part, example|noun
+sand|/sænd/|small grains on a beach|grains, beach material|noun
+satisfy|/ˈsætɪsfaɪ/|to give someone what they need or want|make happy, please|verb
+save|/seɪv/|to keep something for later|keep, store|verb
+say|/seɪ/|to speak words|speak, tell|verb
+scale|/skeɪl/|a size|size, weighing device|noun
+scare|/skeə/|to frighten someone|frighten, alarm|verb
+scene|/siːn/|a place where something happens|place, view|noun
+schedule|/ˈʃedjuːl/|a plan of times|plan, timetable|noun
+science|/ˈsaɪəns/|the study of the natural world|study, knowledge|noun
+score|/skɔː/|points in a game|points, result|noun
+sea|/siː/|a large area of salt water|large water, ocean|noun
+search|/sɜːtʃ/|to look carefully for something|look for, seek|verb
+season|/ˈsiːzn/|one of four parts of the year|part of year, period|noun
+seat|/siːt/|a place to sit|place to sit, chair|noun
+second|/ˈsekənd/|coming after first|after first, next|adjective
+secret|/ˈsiːkrət/|something hidden|hidden, private|noun
+section|/ˈsekʃn/|a part of something, e.g. a book|part, division|noun
+secure|/sɪˈkjʊə/|safe and protected|safe, protected|adjective
+see|/siː/|to notice with your eyes|notice, watch|verb
+seed|/siːd/|a small part from which a plant grows|plant part, grain|noun
+seek|/siːk/|to try to find or get something|look for, search for|verb
+seem|/siːm/|to appear to be|appear, look|verb
+select|/sɪˈlekt/|to choose something carefully|choose, pick|verb
+sell|/sel/|to give something for money|give for money, trade|verb
+send|/send/|to make something go to someone|make go, dispatch|verb
+sense|/sens/|a feeling|feeling, perception|noun
+sensitive|/ˈsensɪtɪv/|easily hurt or affected|easily hurt, delicate|adjective
+sentence|/ˈsentəns/|a group of words with a full meaning|group of words, statement|noun
+separate|/ˈseprət/|apart from others|apart, distinct|adjective
+series|/ˈsɪəriːz/|a set of related things|set, sequence|noun
+serious|/ˈsɪəriəs/|important and not funny|important, grave|adjective
+serve|/sɜːv/|to give food or help|give, help|verb
+set|/set/|to put something in place|put, place|verb
+settle|/ˈsetl/|to decide something|decide|verb
+several|/ˈsevrəl/|more than two|some|adjective
+severe|/sɪˈvɪə/|very serious|harsh|adjective
+shade|/ʃeɪd/|a dark area out of sun|dark area, shadow|noun
+shake|/ʃeɪk/|to move quickly from side to side|move quickly, tremble|verb
+shall|/ʃæl/|used for offers and suggestions about the future|will|verb
+shame|/ʃeɪm/|a bad feeling about something wrong|bad feeling, disgrace|noun
+shape|/ʃeɪp/|the form of something|form, outline|noun
+share|/ʃeə/|to give part of something to others|give part, divide|verb
+sharp|/ʃɑːp/|with a fine edge|fine edge, keen|adjective
+sheep|/ʃiːp/|a farm animal kept for wool|farm animal, lamb|noun
+sheet|/ʃiːt/|a flat piece of paper or cloth|flat piece, page|noun
+shelf|/ʃelf/|a flat board for things|board, ledge|noun
+shell|/ʃel/|the hard cover of something|hard cover, casing|noun
+shield|/ʃiːld/|something that protects|protector, guard|noun
+shift|/ʃɪft/|to move something to another place|move, change|verb
+shine|/ʃaɪn/|to give off light|give light, glow|verb
+ship|/ʃɪp/|a large boat|large boat, vessel|noun
+shirt|/ʃɜːt/|a piece of clothing for the top of the body|clothing, top|noun
+shock|/ʃɒk/|a sudden bad surprise|sudden surprise, jolt|noun
+shoe|/ʃuː/|something worn on the foot|footwear, boot|noun
+shoot|/ʃuːt/|to fire a gun|fire, take photo|verb
+shop|/ʃɒp/|a place to buy things|store, market|noun
+shore|/ʃɔː/|the land by the sea|land by sea, coast|noun
+short|/ʃɔːt/|not long|brief|adjective
+should|/ʃʊd/|used to say what is good or right to do|ought to|verb
+shoulder|/ˈʃəʊldə/|a part of the body|body part, joint|noun
+shout|/ʃaʊt/|to say something loudly|say loudly, yell|verb
+show|/ʃəʊ/|to let someone see something|let see, display|verb
+shower|/ˈʃaʊə/|water for washing|water|noun
+shut|/ʃʌt/|to close something|close, seal|verb
+sick|/sɪk/|not well|ill|adjective
+side|/saɪd/|one of two parts|one part, edge|noun
+sight|/saɪt/|the ability to see|ability to see, view|noun
+sign|/saɪn/|a mark that gives information|mark, symbol|noun
+signal|/ˈsɪɡnəl/|a sign that sends a message|sign, message|noun
+silent|/ˈsaɪlənt/|making no sound|no sound, quiet|adjective
+silk|/sɪlk/|a soft cloth|soft cloth, fabric|noun
+silly|/ˈsɪli/|not serious|funny|adjective
+silver|/ˈsɪlvə/|a grey metal|grey metal, shiny|noun
+similar|/ˈsɪmələ/|almost the same|almost same, alike|adjective
+simple|/ˈsɪmpl/|easy, not difficult|easy, plain|adjective
+since|/sɪns/|from a time in the past|from|preposition
+sing|/sɪŋ/|to make music with your voice|make music, vocalise|verb
+single|/ˈsɪŋɡl/|only one|alone|adjective
+sink|/sɪŋk/|to go down in water|go down, submerge|verb
+sir|/sɜː/|a polite word for a man|mister, gentleman|noun
+sister|/ˈsɪstə/|a female sibling|female sibling, sibling|noun
+sit|/sɪt/|to rest on a chair|rest, be seated|verb
+site|/saɪt/|a place where something is|place, location|noun
+situation|/ˌsɪtʃuˈeɪʃn/|what is happening|state|noun
+size|/saɪz/|how big something is|magnitude, dimensions|noun
+skill|/skɪl/|an ability to do something well|ability, talent|noun
+skin|/skɪn/|the outer cover of the body|outer cover, hide|noun
+skirt|/skɜːt/|a piece of clothing worn around the waist|clothing, garment|noun
+sky|/skaɪ/|the space above us|space above, heavens|noun
+sleep|/sliːp/|to rest with eyes closed|rest, doze|verb
+slide|/slaɪd/|to move smoothly|glide|verb
+slight|/slaɪt/|small in amount|small, minor|adjective
+slip|/slɪp/|to slide and fall|slide, fall|verb
+slow|/sləʊ/|not fast|gradual|adjective
+smart|/smɑːt/|clever|intelligent|adjective
+smell|/smel/|to notice with your nose|notice with nose, scent|verb
+smile|/smaɪl/|to show happiness with your mouth|show happiness, grin|verb
+smoke|/sməʊk/|gas from a fire|gas, fumes|noun
+smooth|/smuːð/|not rough|even|adjective
+snake|/sneɪk/|a long animal with no legs|long animal, reptile|noun
+snow|/snəʊ/|white flakes falling in winter|white flakes, winter|noun
+so|/səʊ/|very much|very, extremely|adverb
+soap|/səʊp/|something used for washing|washing substance, cleanser|noun
+social|/ˈsəʊʃl/|relating to people and friends|public|adjective
+society|/səˈsaɪəti/|people living together|people, community|noun
+sock|/sɒk/|clothing for the foot|foot clothing, hosiery|noun
+soft|/sɒft/|not hard|gentle|adjective
+soil|/sɔɪl/|earth for plants|earth, ground|noun
+soldier|/ˈsəʊldʒə/|a person in the army|army person, fighter|noun
+solid|/ˈsɒlɪd/|hard and firm|hard, firm|adjective
+solve|/sɒlv/|to find an answer|find answer, fix|verb
+some|/sʌm/|a few|a number|adjective
+son|/sʌn/|a male child|male child, boy|noun
+song|/sɒŋ/|music with words|music, tune|noun
+soon|/suːn/|in a short time|shortly|adverb
+sorry|/ˈsɒri/|feeling sad about something|feeling sad, apologetic|adjective
+sort|/sɔːt/|a type|type|noun
+soul|/səʊl/|the spirit of a person|spirit, essence|noun
+sound|/saʊnd/|something you hear|noise|noun
+soup|/suːp/|a liquid food|liquid food, broth|noun
+source|/sɔːs/|where something comes from, e.g. water|where from, origin|noun
+south|/saʊθ/|the direction of the bottom of a map|southward|noun
+space|/speɪs/|an empty area|empty area|noun
+spare|/speə/|extra, not needed now|extra, additional|adjective
+speak|/spiːk/|to say words|talk|verb
+special|/ˈspeʃl/|not ordinary|unique|adjective
+speech|/spiːtʃ/|spoken words|talk|noun
+speed|/spiːd/|how fast something moves|how fast, rate|noun
+spell|/spel/|to write letters in order|write letters, form|verb
+spend|/spend/|to use money or time|use money, use time|verb
+spirit|/ˈspɪrɪt/|the soul|soul|noun
+split|/splɪt/|to divide into parts|divide, break|verb
+spoil|/spɔɪl/|to damage something|damage, ruin|verb
+sport|/spɔːt/|a game like football|game, activity|noun
+spot|/spɒt/|a place, often a small one|place|noun
+spread|/spred/|to cover a larger area|cover, extend|verb
+spring|/sprɪŋ/|the season after winter|season, coil|noun
+square|/skweə/|a shape with four equal sides|shape, four-sided|noun
+stable|/ˈsteɪbl/|steady and not changing|steady, firm|adjective
+staff|/stɑːf/|people who work somewhere|people who work, team|noun
+stage|/steɪdʒ/|a part of a process|part|noun
+stair|/steə/|a step|step, flight|noun
+stand|/stænd/|to be on your feet|be on feet, rise|verb
+star|/stɑː/|a bright object in the sky|bright object, celebrity|noun
+start|/stɑːt/|to begin|commence|verb
+state|/steɪt/|a condition|condition|noun
+station|/ˈsteɪʃn/|a place for trains|place for trains, stop|noun
+stay|/steɪ/|to remain in a place|remain, live|verb
+steady|/ˈstedi/|firm and not changing|firm, stable|adjective
+steal|/stiːl/|to take something that is not yours|take, rob|verb
+steam|/stiːm/|hot gas from water|hot gas, vapour|noun
+steel|/stiːl/|a hard metal|hard metal, alloy|noun
+steep|/stiːp/|very high and sharp|very high, sharp|adjective
+step|/step/|a movement of the foot|foot movement, stair|noun
+stick|/stɪk/|to attach|fasten, glue|verb
+still|/stɪl/|not moving|motionless|adverb
+sting|/stɪŋ/|a sharp pain from an insect|sharp pain, bite|noun
+stir|/stɜː/|to mix something|mix, move|verb
+stock|/stɒk/|goods kept for sale|goods, supplies|noun
+stomach|/ˈstʌmək/|the part of the body for food|tummy, belly|noun
+stone|/stəʊn/|a small rock|rock, pebble|noun
+stop|/stɒp/|to end movement|end, halt|verb
+store|/stɔː/|a shop|shop|noun
+storm|/stɔːm/|bad weather with wind and rain|bad weather, tempest|noun
+story|/ˈstɔːri/|a tale|tale, account|noun
+stove|/stəʊv/|a device for cooking|cooking device, cooker|noun
+straight|/streɪt/|not bent|direct|adjective
+strange|/streɪndʒ/|unusual|odd|adjective
+strategy|/ˈstrætədʒi/|a plan to achieve something|plan, approach|noun
+stream|/striːm/|a small river|small river, flow|noun
+street|/striːt/|a road in a town|road, way|noun
+strength|/streŋθ/|power|force|noun
+stress|/stres/|worry and pressure|worry, pressure|noun
+stretch|/stretʃ/|to make longer|extend|verb
+strict|/strɪkt/|very firm about rules|firm, severe|adjective
+strike|/straɪk/|to hit|stop work|verb
+string|/strɪŋ/|a thin rope|thin rope, cord|noun
+strong|/strɒŋ/|having power|powerful, firm|adjective
+structure|/ˈstrʌktʃə/|how something is built|how built, frame|noun
+struggle|/ˈstrʌɡl/|to try hard|fight|verb
+student|/ˈstjuːdnt/|a person who studies|person who studies, learner|noun
+study|/ˈstʌdi/|to learn|read|verb
+stuff|/stʌf/|things|material|noun
+stupid|/ˈstjuːpɪd/|not clever|foolish|adjective
+style|/staɪl/|a particular way of doing or making something|way, fashion|noun
+subject|/ˈsʌbdʒɪkt/|a topic|topic, theme|noun
+submit|/səbˈmɪt/|to give something for review|give, present|verb
+succeed|/səkˈsiːd/|to do well|win|verb
+such|/sʌtʃ/|of this kind|so|adjective
+sudden|/ˈsʌdn/|happening quickly|quick, unexpected|adjective
+suffer|/ˈsʌfə/|to feel pain|endure|verb
+sugar|/ˈʃʊɡə/|a sweet food|sweet food, sweetener|noun
+suggest|/səˈdʒest/|to give an idea|give idea, propose|verb
+suit|/suːt/|a set of clothes made to match|clothes, outfit|noun
+summer|/ˈsʌmə/|the warm season|warm season, season|noun
+supper|/ˈsʌpə/|an evening meal|evening meal, dinner|noun
+supply|/səˈplaɪ/|to give something needed, often regularly|give, provide|verb
+support|/səˈpɔːt/|to help someone, e.g. with money or care|help, back|verb
+suppose|/səˈpəʊz/|to think something is true|think, assume|verb
+sure|/ʃʊə/|certain|confident|adjective
+surface|/ˈsɜːfɪs/|the outside or top layer of something|top layer, outer layer|noun
+surprise|/səˈpraɪz/|something unexpected|unexpected thing, shock|noun
+surround|/səˈraʊnd/|to be around something|be around, encircle|verb
+survey|/ˈsɜːveɪ/|a study of opinions|study, poll|noun
+survive|/səˈvaɪv/|to stay alive|live on|verb
+suspect|/səˈspekt/|to think someone did something|think, believe|verb
+sweet|/swiːt/|tasting of sugar|pleasant|adjective
+swim|/swɪm/|to move in water|bathe|verb
+swing|/swɪŋ/|to move back and forth|sway|verb
+switch|/swɪtʃ/|to change something for another|change, turn|verb
+symbol|/ˈsɪmbl/|a sign that stands for something|sign, mark|noun
+system|/ˈsɪstəm/|a set of connected parts|set, network|noun
+table|/ˈteɪbl/|a piece of furniture|furniture, desk|noun
+tail|/teɪl/|the back part of an animal|back part, rear|noun
+take|/teɪk/|to get something and hold it|get, hold|verb
+tale|/teɪl/|a story|story, account|noun
+talk|/tɔːk/|to speak|chat|verb
+tall|/tɔːl/|high in height|high, lofty|adjective
+tank|/tæŋk/|a container for liquid|container, vessel|noun
+tape|/teɪp/|sticky material|strip|noun
+target|/ˈtɑːɡɪt/|something aimed at|aim, goal|noun
+task|/tɑːsk/|a job to do|job, work|noun
+taste|/teɪst/|the flavour of food|flavour, sense|noun
+tax|/tæks/|money paid to the government|duty, levy|noun
+tea|/tiː/|a hot drink|hot drink, beverage|noun
+teach|/tiːtʃ/|to help someone learn|help learn, instruct|verb
+team|/tiːm/|a group working together|group, side|noun
+tear|/teə/|to pull something apart|pull apart, rip|verb
+technical|/ˈteknɪkl/|relating to machines or science|relating to machines, scientific|adjective
+tell|/tel/|to say something to someone|say, inform|verb
+temperature|/ˈtemprətʃə/|how hot or cold something is|how hot, heat|noun
+temple|/ˈtempl/|a place for worship|place for worship, shrine|noun
+temporary|/ˈtemprəri/|lasting for a short time|short-term, brief|adjective
+tend|/tend/|to usually do something|usually do, care for|verb
+tension|/ˈtenʃn/|a feeling of worry|worry, strain|noun
+term|/tɜːm/|a word|word|noun
+terrible|/ˈterəbl/|very bad|awful|adjective
+test|/test/|an exam|exam, trial|noun
+text|/tekst/|written words|words|noun
+than|/ðæn/|used in comparisons|as|conjunction
+thank|/θæŋk/|to show you are grateful|show grateful, appreciate|verb
+that|/ðæt/|used to point to something|that one|determiner
+theatre|/ˈθɪətə/|a place for plays|place for plays, stage|noun
+their|/ðeə/|belonging to them|theirs|adjective
+theme|/θiːm/|the main idea|main idea, topic|noun
+then|/ðen/|after that|next|adverb
+theory|/ˈθɪəri/|an idea that explains something|idea, explanation|noun
+there|/ðeə/|in that place|over there|adverb
+these|/ðiːz/|plural of this|those|adjective
+they|/ðeɪ/|people|them|pronoun
+thick|/θɪk/|not thin|dense|adjective
+thin|/θɪn/|not thick|slim|adjective
+thing|/θɪŋ/|an object|object, item|noun
+think|/θɪŋk/|to use your mind|use mind, consider|verb
+third|/θɜːd/|coming after second|after second, next|adjective
+thirsty|/ˈθɜːsti/|needing a drink|needing drink, dry|adjective
+thorough|/ˈθʌrə/|complete and careful|complete, careful|adjective
+though|/ðəʊ/|but; although|however|conjunction
+thought|/θɔːt/|an idea|idea, thinking|noun
+thousand|/ˈθaʊznd/|1000|one thousand|noun
+threat|/θret/|a danger|danger, warning|noun
+three|/θriː/|the number 3|number 3, trio|noun
+throat|/θrəʊt/|the part of the body for swallowing|body part, gullet|noun
+through|/θruː/|from one side to the other|from side to side, via|preposition
+throw|/θrəʊ/|to send something through the air|send through air, toss|verb
+thumb|/θʌm/|a part of the hand|hand part, digit|noun
+thunder|/ˈθʌndə/|the sound after lightning|sound, boom|noun
+ticket|/ˈtɪkɪt/|a paper that lets you enter|paper, pass|noun
+tide|/taɪd/|the rise and fall of the sea|rise and fall, sea|noun
+tie|/taɪ/|to fasten something|fasten, bind|verb
+tight|/taɪt/|not loose|firm|adjective
+till|/tɪl/|until|up to|preposition
+time|/taɪm/|a period|period, hour|noun
+tin|/tɪn/|a metal container|metal container, can|noun
+tiny|/ˈtaɪni/|very small|little|adjective
+tip|/tɪp/|a small piece of advice|advice|noun
+tired|/ˈtaɪəd/|needing rest|weary|adjective
+title|/tɪtl/|the name of something|name, heading|noun
+toast|/təʊst/|bread made brown by heat|bread, grilled bread|noun
+today|/təˈdeɪ/|this day|now|adverb
+together|/təˈɡeðə/|with each other|jointly|adverb
+toilet|/ˈtɔɪlət/|a place for waste|place, bathroom|noun
+tomorrow|/təˈmɒrəʊ/|the day after today|day after today, next day|noun
+tongue|/tʌŋ/|the part of the mouth for tasting and speaking|mouth part, language|noun
+tonight|/təˈnaɪt/|this evening|later|adverb
+too|/tuː/|also|as well|adverb
+tool|/tuːl/|something used to do work|device, instrument|noun
+tooth|/tuːθ/|a hard part in the mouth|hard part, molar|noun
+top|/tɒp/|the highest part|highest part, peak|noun
+total|/ˈtəʊtl/|the whole amount|whole amount, sum|noun
+touch|/tʌtʃ/|to feel with your hand|feel, contact|verb
+tough|/tʌf/|hard and strong|hard, strong|adjective
+tour|/tʊə/|a trip to see places|trip, journey|noun
+toward|/təˈwɔːd/|in the direction of|towards, to|preposition
+towel|/ˈtaʊəl/|cloth for drying|cloth, drying cloth|noun
+tower|/ˈtaʊə/|a tall building|tall building, spire|noun
+town|/taʊn/|a place where people live|place, settlement|noun
+toy|/tɔɪ/|something children play with|plaything, game|noun
+trace|/treɪs/|a small sign|small sign, mark|noun
+track|/træk/|a path|path|noun
+trade|/treɪd/|buying and selling|commerce|noun
+tradition|/trəˈdɪʃn/|a custom from the past|custom, habit|noun
+traffic|/ˈtræfɪk/|cars on a road|cars, vehicles|noun
+train|/treɪn/|a vehicle on rails|vehicle|noun
+transfer|/trænsˈfɜː/|to move something to another place or person|move, shift|verb
+travel|/ˈtrævl/|to go to another place, often far away|go, journey|verb
+treat|/triːt/|to deal with someone or something in a way|deal with|verb
+tree|/triː/|a tall plant|tall plant, woody plant|noun
+trend|/trend/|a general direction|direction, fashion|noun
+trial|/ˈtraɪəl/|a test|test, experiment|noun
+tribe|/traɪb/|a group of people|group, clan|noun
+trick|/trɪk/|to fool someone with a clever act|clever act, joke|verb
+trip|/trɪp/|a journey|journey, travel|noun
+trouble|/ˈtrʌbl/|a problem that causes difficulty|problem, difficulty|noun
+truck|/trʌk/|a large vehicle for carrying goods|large vehicle, lorry|noun
+true|/truː/|correct and real|correct, real|adjective
+trust|/trʌst/|to believe someone|believe, rely on|verb
+truth|/truːθ/|what is real|fact|noun
+try|/traɪ/|to attempt something|attempt, try out|verb
+tube|/tjuːb/|a long hollow pipe|pipe, hollow|noun
+tune|/tjuːn/|a melody|melody, song|noun
+turn|/tɜːn/|to move around|rotate|verb
+twice|/twaɪs/|two times|double|adverb
+twin|/twɪn/|one of two born together|one of two, pair|noun
+type|/taɪp/|a kind|kind|noun
+typical|/ˈtɪpɪkl/|usual; like most others|normal|adjective
+ugly|/ˈʌɡli/|not nice to look at|not nice, unattractive|adjective
+unable|/ʌnˈeɪbl/|not able to do something|not able, incapable|adjective
+uncle|/ˈʌŋkl/|the brother of a parent|brother of parent, relative|noun
+under|/ˈʌndə/|below something|below, beneath|preposition
+understand|/ˌʌndəˈstænd/|to know the meaning|know, grasp|verb
+unhappy|/ʌnˈhæpi/|sad|down|adjective
+uniform|/ˈjuːnɪfɔːm/|clothes worn by a group|clothes, outfit|noun
+unique|/juːˈniːk/|one of a kind|special|adjective
+unit|/ˈjuːnɪt/|a single part|single part, piece|noun
+unite|/juːˈnaɪt/|to join together|join, combine|verb
+universe|/ˈjuːnɪvɜːs/|everything in space|everything, cosmos|noun
+university|/ˌjuːnɪˈvɜːsəti/|a place for higher study|higher study place, college|noun
+unknown|/ʌnˈnəʊn/|not known|mysterious|adjective
+unless|/ʌnˈles/|if not; except when|except|conjunction
+until|/ʌnˈtɪl/|up to a time|up to, till|preposition
+unusual|/ʌnˈjuːʒuəl/|not normal|strange|adjective
+up|/ʌp/|towards a higher place|towards higher, above|adverb
+upon|/əˈpɒn/|on something|on, over|preposition
+upper|/ˈʌpə/|higher|top|adjective
+upset|/ʌpˈset/|sad or worried|sad, worried|adjective
+urban|/ˈɜːbn/|relating to a town|town, city|adjective
+urge|/ɜːdʒ/|to strongly encourage|encourage, push|verb
+use|/juːz/|to do something with an object|do with, employ|verb
+useful|/ˈjuːsfl/|helpful|handy|adjective
+usual|/ˈjuːʒuəl/|normal; happening most of the time|ordinary|adjective
+usually|/ˈjuːʒuəli/|most of the time|most of time, normally|adverb
+vacation|/vəˈkeɪʃn/|a holiday|holiday, break|noun
+valid|/ˈvælɪd/|acceptable and true|acceptable, true|adjective
+valley|/ˈvæli/|land between hills|dale|noun
+valuable|/ˈvæljuəbl/|worth a lot|precious|adjective
+value|/ˈvæljuː/|how much something is worth|worth, importance|noun
+van|/væn/|a large vehicle, smaller than a truck|large vehicle, truck|noun
+variety|/vəˈraɪəti/|many different types|many types, diversity|noun
+various|/ˈveəriəs/|different kinds|different, several|adjective
+vast|/vɑːst/|very large in area|very large, huge|adjective
+vegetable|/ˈvedʒtəbl/|a plant eaten as food|plant food, greens|noun
+vehicle|/ˈviːəkl/|something used for transport|transport, car|noun
+venture|/ˈventʃə/|a risky project|risky project, endeavour|noun
+verb|/vɜːb/|a doing word|doing word, action word|noun
+version|/ˈvɜːʃn/|a form of something|form, edition|noun
+very|/ˈveri/|extremely|highly|adverb
+victim|/ˈvɪktɪm/|a person harmed|person harmed, sufferer|noun
+victory|/ˈvɪktəri/|a win|win, success|noun
+view|/vjuː/|what you can see from a place|sight, scene|noun
+village|/ˈvɪlɪdʒ/|a small place where people live|small place, hamlet|noun
+visit|/ˈvɪzɪt/|to go to see someone|go to see, call on|verb
+visual|/ˈvɪʒuəl/|relating to seeing|seen|adjective
+voice|/vɔɪs/|the sound you make when speaking|sound, speech|noun
+volume|/ˈvɒljuːm/|how loud something is|how loud|noun
+vote|/vəʊt/|to choose in an election|choose, elect|verb
+voyage|/ˈvɔɪɪdʒ/|a long journey by sea|long journey, trip|noun
+wage|/weɪdʒ/|money paid for work|money paid, salary|noun
+wait|/weɪt/|to stay until something happens|stay, remain|verb
+wake|/weɪk/|to stop sleeping|awaken|verb
+walk|/wɔːk/|to move on foot|stroll|verb
+wall|/wɔːl/|a structure that divides|structure, barrier|noun
+wander|/ˈwɒndə/|to walk without a clear direction|walk without direction, roam|verb
+want|/wɒnt/|to wish for something|wish for, desire|verb
+war|/wɔː/|fighting between countries|fighting, conflict|noun
+warm|/wɔːm/|not cold|heated|adjective
+warn|/wɔːn/|to tell someone about danger|tell about danger, alert|verb
+wash|/wɒʃ/|to clean with water|clean, cleanse|verb
+waste|/weɪst/|to use something badly|use badly, throw away|verb
+watch|/wɒtʃ/|to look at something|look at, observe|verb
+wave|/weɪv/|to move your hand|move hand|verb
+way|/weɪ/|a method|method|noun
+weak|/wiːk/|not strong; without power|feeble|adjective
+wealth|/welθ/|a lot of money|riches|noun
+wear|/weə/|to have clothes on|have on, dress in|verb
+weather|/ˈweðə/|rain, sun, wind and temperature|rain and sun, climate|noun
+web|/web/|the internet|internet|noun
+wedding|/ˈwedɪŋ/|a marriage ceremony|marriage, ceremony|noun
+week|/wiːk/|seven days|seven-day period|noun
+weigh|/weɪ/|to find how heavy something is|find heavy, measure|verb
+welcome|/ˈwelkəm/|to greet someone warmly|greet warmly, receive|verb
+well|/wel/|in a good way|healthy|adverb
+west|/west/|the direction of the sunset|direction, sunset|noun
+wet|/wet/|covered with water|damp|adjective
+whale|/weɪl/|a very large sea animal|large sea animal, mammal|noun
+what|/wɒt/|used to ask a question|which|pronoun
+wheel|/wiːl/|a round object that turns|round object, circle|noun
+when|/wen/|at what time|while|adverb
+where|/weə/|in what place|at what place|adverb
+whether|/ˈweðə/|if|either|conjunction
+which|/wɪtʃ/|used to ask about a thing|that|pronoun
+while|/waɪl/|during the time that|during, as|conjunction
+whisper|/ˈwɪspə/|to speak very quietly|speak quietly, murmur|verb
+white|/waɪt/|the colour of snow|colour of snow, pale|adjective
+who|/huː/|used to ask about a person|that|pronoun
+whole|/həʊl/|all of something|all, entire|adjective
+whose|/huːz/|belonging to whom|of whom|determiner
+why|/waɪ/|for what reason|what for|adverb
+wide|/waɪd/|not narrow|broad|adjective
+wife|/waɪf/|a married woman|married woman, spouse|noun
+wild|/waɪld/|not tame|free|adjective
+will|/wɪl/|used to talk about the future|shall|verb
+win|/wɪn/|to be first in a game|be first, succeed|verb
+wind|/wɪnd/|moving air|breeze|noun
+window|/ˈwɪndəʊ/|an opening in a wall|opening, glass|noun
+wine|/waɪn/|a drink made from grapes|drink, grape drink|noun
+wing|/wɪŋ/|a part for flying|part for flying, side|noun
+winner|/ˈwɪnə/|a person who wins|person who wins, champion|noun
+winter|/ˈwɪntə/|the cold season|cold season, season|noun
+wipe|/waɪp/|to clean by rubbing|rub|verb
+wire|/waɪə/|a thin metal line|thin metal, cable|noun
+wise|/waɪz/|having good judgement|smart|adjective
+wish|/wɪʃ/|to want something|want, hope for|verb
+with|/wɪð/|together with|along with|preposition
+within|/wɪˈðɪn/|inside something|inside, in|preposition
+without|/wɪˈðaʊt/|not having something|lacking|preposition
+witness|/ˈwɪtnəs/|a person who sees something|person who sees, observer|noun
+wolf|/wʊlf/|a wild animal|wild animal, canine|noun
+wonder|/ˈwʌndə/|to think about something with curiosity|think with curiosity, marvel|verb
+wood|/wʊd/|material from trees|material, timber|noun
+word|/wɜːd/|a unit of language|unit of language, term|noun
+work|/wɜːk/|a job|job, employment|noun
+world|/wɜːld/|the earth and all people on it|earth, globe|noun
+worry|/ˈwʌri/|to feel anxious|fret|verb
+worth|/wɜːθ/|having a value|having value, deserving|adjective
+wound|/wuːnd/|an injury|injury, cut|noun
+wrap|/ræp/|to cover something|cover, enclose|verb
+write|/raɪt/|to put words on paper by hand|put words, compose|verb
+wrong|/rɒŋ/|not correct|incorrect|adjective
+yard|/jɑːd/|a garden area|garden|noun
+year|/jɪə/|12 months|period|noun
+yellow|/ˈjeləʊ/|the colour of the sun|colour of sun, golden|adjective
+yes|/jes/|a word for agreement|agreement, affirmation|interjection
+yesterday|/ˈjestədeɪ/|the day before today|day before today, past day|noun
+yet|/jet/|until now|still|adverb
+yield|/jiːld/|to give way to someone or something|give way, surrender|verb
+young|/jʌŋ/|not old|new|adjective
+your|/jɔː/|belonging to you|yours|adjective
+youth|/juːθ/|the time of being young|time of being young, young people|noun
+zone|/zəʊn/|an area with a special use|area, region|noun
+break the ice|/breɪk ðiː aɪs/|to start a conversation in a friendly way|start talking, ease tension|idiom
+piece of cake|/piːs əv keɪk/|something very easy|very easy, simple|idiom
+hit the books|/hɪt ðə bʊks/|to start studying|study hard|idiom
+under the weather|/ˈʌndə ðə ˈweðə/|feeling slightly ill|slightly ill, unwell|idiom
+once in a blue moon|/wʌns ɪn ə bluː muːn/|very rarely|almost never|idiom
+look up|/lʊk ʌp/|to search for information|search for, find|phrasal
+give up|/ɡɪv ʌp/|to stop trying|quit|phrasal
+pick up|/pɪk ʌp/|to collect or learn something|collect, learn|phrasal
+turn up|/tɜːn ʌp/|to arrive or appear|arrive, appear|phrasal
+come across|/kʌm əˈkrɒs/|to find something by chance|find by chance, meet|phrasal
