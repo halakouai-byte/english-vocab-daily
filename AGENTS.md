@@ -29,6 +29,8 @@ English. Owner language: Persian.
   bank generator/regenerator.
 - `.github/workflows/post.yml` — workflow "Post to Telegram".
   `.github/workflows/keepalive.yml` — monthly keepalive.
+  `.github/workflows/secret-scan.yml` — workflow "Secret scan" (gitleaks
+  v8.28.0, full history, fails on any finding).
 - `assets/` — channel/bot logo (EVD, navy + gold). `docs/` — channel copy,
   setup guide, analytics baseline. `CHANNEL_SETUP.md`, `BOT_COMMANDS.md`,
   `RELEASE_TEST_PLAN.md`, `KPI_BASELINE.md` — ops docs.
@@ -93,6 +95,15 @@ credentials on a local machine; use the dry-run or a manual
   `post.py` redacts `bot<digits>:<35 chars>` from any error text before
   logging (`logs/error-log.md` is committed to this public repo).
 - GitHub cron is best-effort: expect 15–30 min delays sometimes.
+- Leak protection (Layer 1): workflow "Secret scan"
+  (`.github/workflows/secret-scan.yml`) runs on push, on pull_request, and
+  weekly (Sunday 03:00 UTC). It checks out the full history
+  (`fetch-depth: 0`), downloads pinned gitleaks v8.28.0, verifies its SHA256
+  before extracting, then runs `/tmp/gitleaks git --verbose --exit-code 1`
+  — the workflow FAILS on any finding. No token of any kind is used by this
+  workflow. Layer 2 (GitHub native Secret scanning + Push protection +
+  CodeQL) and Layer 3 (manager sweep) are enabled/verified outside this
+  repo's files.
 
 ## 5. External services (names only)
 
@@ -138,6 +149,12 @@ credentials on a local machine; use the dry-run or a manual
   variant from the round-2 content edit, different quiz distractors);
   local `data/lessons.json` was restored from the live repo so local ==
   remote == `lessons-fixed-v2.json`. The v2 bank is the only source of truth.
+- 2026-11-21: leak protection Layer 1 added — `.github/workflows/
+  secret-scan.yml` (gitleaks v8.28.0, SHA256-verified, full history, fails
+  on any finding; triggers push + pull_request + weekly). One-time
+  full-history audit 2026-11-21 found 0 findings in all repos; the first
+  CI run of this workflow must confirm 0 findings again. Pattern copied
+  from liveforge's `build.yml` (same pinned version and scan command).
 - CORRECTION (2026-11-20): channel photo/description/title CAN be set via
   Bot API by the admin bot with can_change_info
   (`setChatPhoto`/`setChatDescription`/`setChatTitle`). The earlier
@@ -171,7 +188,9 @@ credentials on a local machine; use the dry-run or a manual
   in any file, in chat, or in code. GitHub Secrets only:
   `TELEGRAM_BOT_TOKEN`, `TELEGRAM_CHAT_ID`.
 - NEVER commit a file containing a secret value. Before every commit, grep
-  for `bot[0-9]+:` and for secret-looking strings.
+  for `bot[0-9]+:` and for secret-looking strings. The CI secret scan
+  (`secret-scan.yml`) enforces this on every push and PR — a finding fails
+  the run.
 - NEVER promise income to subscribers or in channel copy. Use the honest
   ranges in §6.
 - NEVER copy content from other channels, textbooks, or dictionaries. All
