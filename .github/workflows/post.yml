@@ -3,9 +3,17 @@ name: Post to Telegram
 on:
   schedule:
     # 07:15 and 17:15 UTC every day — morning word + evening quiz.
-    # Cron in GitHub Actions is best-effort: expect 15-30 min delay sometimes.
+    # Cron in GitHub Actions is best-effort: delays of hours happen and an
+    # event can be dropped entirely (2026-11-21: the 07:15 run was never
+    # created). watchdog.yml catches a missed slot.
     - cron: '15 7,17 * * *'
   workflow_dispatch:
+    inputs:
+      kind:
+        description: 'Which post to send: word, quiz, or empty = decide by UTC hour'
+        required: false
+        default: ''
+        type: string
 
 permissions:
   contents: write
@@ -34,6 +42,7 @@ jobs:
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          POST_KIND: ${{ inputs.kind }}
         run: python scripts/post.py
 
       - name: Commit updated state
