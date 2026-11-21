@@ -199,3 +199,15 @@ credentials on a local machine; use the dry-run or a manual
   channel.
 - Any commit changing architecture, posting logic, automation, or external
   connections MUST update this file in the same commit.
+
+
+## 9. GitHub read/write rule (standing, owner order 2026-11-21)
+
+- READS only via the GitHub connector: HEAD, files, commits, repo status,
+  logs. Never read the repo any other way.
+- WRITES never via the connector: never use a connector write tool and
+  never send a write-approval card to the owner. All pushes, commits,
+  branches, and anything that changes the repo or the site go through the
+  browser, done by the manager (Muse in the management chat).
+- The team prepares the write (files + exact commit message) and hands it
+  to the manager; the manager commits it via the browser.
