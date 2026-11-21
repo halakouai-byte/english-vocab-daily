@@ -22,12 +22,15 @@ English. Owner language: Persian.
 - `data/words.txt` — the word list, 1,446 words, same order as the bank.
 - `data/lessons-fixed-v2.json` — provenance copy of the v2 bank (identical
   to `lessons.json`).
-- `data/state.json` — `{last_index, last_date, last_hash}`. Advanced by the
-  workflow after each successful post.
+- `data/state.json` — `{last_index, last_date, last_hash, last_kind}`. Advanced by the
+  workflow after each successful post. `last_kind` is "word" or "quiz" — the
+  watchdog uses it to tell which post is missing.
 - `scripts/post.py` — the poster. `scripts/templates.py` — `WORD_TEMPLATE`,
   `QUIZ_TEMPLATE` (4 rotating quiz templates). `scripts/generate_lessons.py` —
   bank generator/regenerator.
 - `.github/workflows/post.yml` — workflow "Post to Telegram".
+  `.github/workflows/watchdog.yml` — hourly catch-up: dispatches post.yml
+  with the missing kind when a slot is overdue (see §4).
   `.github/workflows/keepalive.yml` — monthly keepalive.
   `.github/workflows/secret-scan.yml` — workflow "Secret scan" (gitleaks
   v8.28.0, full history, fails on any finding).
@@ -85,6 +88,8 @@ credentials on a local machine; use the dry-run or a manual
   `chore: update state YYYY-MM-DD`). That daily commit is also what keeps the
   repo active so GitHub does not disable the schedule after 60 days of
   inactivity; `keepalive.yml` (1st of month, 06:00 UTC) is the second belt.
+  State also records `last_kind` ("word"/"quiz") so the watchdog knows which
+  post is missing.
 - Retry: exponential backoff 1s/2s/4s/8s/16s on network/5xx; on Telegram 429,
   respect `retry_after` and retry once. Optional enrichment via Free
   Dictionary API (api.dictionaryapi.dev, no key); any failure falls back to
@@ -94,7 +99,13 @@ credentials on a local machine; use the dry-run or a manual
   and variables → Actions. The token is embedded in the Telegram API URL, so
   `post.py` redacts `bot<digits>:<35 chars>` from any error text before
   logging (`logs/error-log.md` is committed to this public repo).
-- GitHub cron is best-effort: expect 15–30 min delays sometimes.
+- GitHub cron is best-effort: delays of hours happen and a scheduled event
+  can be dropped entirely — 2026-11-20 the 17:15 run started ~5h48m late;
+  2026-11-21 the 07:15 run was never created. `watchdog.yml` runs hourly
+  and catches a missed slot: word if nothing posted today by 10:00 UTC,
+  quiz if only the word posted by 19:00 UTC. It dispatches post.yml with
+  `POST_KIND`; post.py dedupes by hash, so a late scheduled run only skips.
+  The watchdog never dispatches while a post.yml run is queued/running.
 - Leak protection (Layer 1): workflow "Secret scan"
   (`.github/workflows/secret-scan.yml`) runs on push, on pull_request, and
   weekly (Sunday 03:00 UTC). It checks out the full history
@@ -159,6 +170,17 @@ credentials on a local machine; use the dry-run or a manual
   Bot API by the admin bot with can_change_info
   (`setChatPhoto`/`setChatDescription`/`setChatTitle`). The earlier
   "creator-only in the app" claim was wrong.
+- 2026-11-21 07:15 UTC: scheduled morning run NEVER created by GitHub
+  (checked 13:14 UTC — no run #3 in the Actions list). Manager dispatched
+  post.yml manually; run #3 posted the quiz for lesson 325 "final" at
+  13:16 UTC (state commit `a6b86fc`). The word for 325 never posted —
+  hour-based kind selection sent a quiz instead of the missing word.
+  Cause: GitHub's best-effort scheduler dropped the event; no repo-side
+  defect (same file ran fine at 17:15 the same day). Fix: `watchdog.yml`
+  (hourly catch-up) + `last_kind` in state.
+- 2026-11-21 17:15 UTC: scheduled run #4 ran (18s). No new post and no
+  state change — consistent with the expected dedupe-skip (quiz 325 was
+  already posted at 13:16 UTC).
 - Income honesty (never promise more): at ~10k members $65–245/month;
   $200–1,000/month needs ~20k–50k members. Stars PDF (350 Stars) earliest
   end of week 1; Telegram Ads only after 1,000 members.
@@ -168,11 +190,14 @@ credentials on a local machine; use the dry-run or a manual
 - DONE 2026-11-20: channel username confirmed; bio + pinned welcome post
   applied; bot photo/name/About/description/commands applied; test posts
   cleaned.
-- OPEN: GitHub Secrets status — set by the owner, never re-verified by the
-  team. Verify with a manual workflow_dispatch run (Actions → Post to
-  Telegram → Run workflow), then a scheduled run.
+- DONE 2026-11-21: GitHub Secrets proven — three live posts (manual run #1,
+  scheduled run #2, manual run #3) all used `TELEGRAM_BOT_TOKEN` +
+  `TELEGRAM_CHAT_ID` successfully.
 - OPEN: monitor the first 7 days of scheduled runs; re-run manually the same
   day if one fails.
+- OPEN: watchdog.yml added 2026-11-21 — watch the first week: it must
+  dispatch within ~1h of a missed slot and never double-post (dedupe is
+  the backstop).
 - OPEN: quiz is a text message, not a Telegram Poll (no poll votes). Poll
   quiz is a future improvement, not a launch blocker.
 - OPEN: "Day N/365" label is not in post templates yet; Phrasal Verb Friday

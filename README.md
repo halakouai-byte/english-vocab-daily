@@ -3,10 +3,7 @@
 An English-only Telegram channel that posts one vocabulary word every morning
 and a quiz every evening — **fully automated with GitHub Free, no AI at runtime**.
 
-- **Channel:** English Vocabulary Daily
-- **Likely username:** `@englishworddaily` — ⚠️ **TO CONFIRM.** The user built the
-  channel but has not confirmed the exact username. Do not assume this is final;
-  update this README and the channel link once confirmed in the Telegram app.
+- **Channel:** [English Vocabulary Daily](https://t.me/learnvocabularydaily) — `@learnvocabularydaily`, confirmed 2026-11-20 (channel ID -1004348347589).
 - **Language:** English only, global audience.
 - **Cost:** $0 — public GitHub repo, GitHub Actions free tier, Telegram Bot API free.
 
@@ -45,8 +42,7 @@ written for this repo. No copied text from BBC, Duolingo, or textbooks.
 - **Lesson bank (`data/lessons.json`, `data/words.txt`):** all 1,446 words,
   meanings, example sentences and quizzes are original content written for
   this repo. No text was copied from BBC, Duolingo, textbooks or any other
-  published course. Example sentences are built from fixed original
-  templates plus each word's own meaning.
+  published course. Example sentences are real, original sentences written for this repo (v2 rewrite, 2026-11-19).
 - **Optional enrichment only:** the Free Dictionary API
   (`https://api.dictionaryapi.dev`, no API key required) may supply a
   phonetic pronunciation if the bank entry has none. It is never required
@@ -74,9 +70,7 @@ written for this repo. No copied text from BBC, Duolingo, or textbooks.
 - Each run takes ~1.5 minutes → 2 posts/day ≈ **90 minutes/month**
   (0% of a private quota, $0 public). 10 posts/day would be ~450 min/month,
   still $0 on a public repo.
-- Cron minimum interval is 5 minutes; scheduling is best-effort — expect a
-  15–30 minute delay sometimes, and occasionally a missed run. Never promise
-  an exact posting minute.
+- Cron minimum interval is 5 minutes; scheduling is best-effort — delays of hours happen and a scheduled event can be dropped entirely (2026-11-21: the 07:15 run was never created; 2026-11-20: the 17:15 run started ~5h48m late). `.github/workflows/watchdog.yml` runs hourly and dispatches the missing post, so a missed slot is caught within ~1–3 hours. Never promise an exact posting minute.
 - One job timeout is 6 hours; we set `timeout-minutes: 5`.
 - Repo secrets: max 100 per repo — we use only 2.
 - Storage: `lessons.json` is under 2 MB, far below the 500 MB artifact /
@@ -124,13 +118,14 @@ prefer the GitHub workflow run instead.
 
 ```
 .github/workflows/post.yml       # cron 07:15 + 17:15 UTC, posts + commits state
+.github/workflows/watchdog.yml   # hourly catch-up: dispatches the missing post if a slot is dropped
 .github/workflows/keepalive.yml  # monthly keepalive commit
 scripts/post.py                   # poster: stdlib + requests only, no AI
 scripts/templates.py              # fixed message templates
 scripts/generate_lessons.py       # rebuilds lessons.json from data/words.txt
 data/lessons.json                 # 1,446 lessons
 data/words.txt                    # source word list (word|phonetic|meaning|synonyms|type)
-data/state.json                   # {last_index, last_date, last_hash}
+data/state.json                   # {last_index, last_date, last_hash, last_kind}
 README.md / BUILD_REPORT.md / LICENSE (MIT) / data/LICENSE (CC BY 4.0) / .gitignore
 ```
 
@@ -151,8 +146,4 @@ README.md / BUILD_REPORT.md / LICENSE (MIT) / data/LICENSE (CC BY 4.0) / .gitign
 
 ## Still needed
 
-- Confirm the exact channel username (`@englishworddaily` is a placeholder —
-  the channel exists, but the exact username is unconfirmed; update this
-  README once confirmed in the Telegram app).
-- The bot token and channel chat ID are already stored as GitHub secrets
-  (`TELEGRAM_BOT_TOKEN`, `TELEGRAM_CHAT_ID`) — never in chat or in the repo.
+- Nothing blocking launch: channel username confirmed (`@learnvocabularydaily`), bot token and channel chat ID stored as GitHub secrets (`TELEGRAM_BOT_TOKEN`, `TELEGRAM_CHAT_ID`) and proven by live posts — never in chat or in the repo. Next improvements (see AGENTS.md §7): "Day N/365" label, Poll quiz, Phrasal Verb Friday / Idiom Saturday automation, Stars PDF product.
