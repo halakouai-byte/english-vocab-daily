@@ -19,7 +19,7 @@ Behaviour:
 - Dry-run: if TELEGRAM_BOT_TOKEN or TELEGRAM_CHAT_ID is missing,
   print the message instead of sending and exit 0. This is how you test
   locally without a token.
-- State: updates data/state.json {last_index, last_date, last_hash}
+- State: updates data/state.json {last_index, last_date, last_hash, last_kind}
   after a successful send (or dry-run, with hash recorded only on real send
   -- dry-run does NOT update state, so a real run is not skipped).
 - Errors are appended to logs/error-log.md and also printed.
@@ -255,6 +255,7 @@ def main() -> int:
 
     state["last_index"] = index
     state["last_date"] = now.date().isoformat()
+    state["last_kind"] = kind
     state["last_hash"] = digest
     save_state(state)
     print(f"Posted {kind} for index {index} ({lesson['word']}) at {now.isoformat()}")
