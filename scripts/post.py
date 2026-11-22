@@ -6,19 +6,21 @@ Deterministic: word = lessons[day_of_year % len(lessons)].
 
 Behaviour:
 - Morning run (UTC hour < 12, cron 07:15 UTC): Word of the Day.
-- Evening run (UTC hour >= 12, cron 17:15 UTC): 4-option quiz on the
-  morning word + yesterday's answer.
+- Evening run (UTC hour >= 12, cron 17:15 UTC): Telegram Poll quiz on the
+  morning word (question "Day {day}/365: {quiz_q}", 4 options,
+  correct_option_id = index of quiz_a, explanation = yesterday's answer).
 - POST_KIND env can force "word" or "quiz" (for manual runs).
-- Dedupe: SHA-256 of the rendered message is stored in data/state.json.
-  If the hash matches last_hash, nothing is sent.
+- Dedupe: SHA-256 of the rendered message (word) or the canonical poll
+  payload (quiz) is stored in data/state.json. If the hash matches
+  last_hash, nothing is sent.
 - Retry: exponential backoff (1s, 2s, 4s, 8s, 16s) on network/5xx errors.
   If Telegram returns 429, respect retry_after and wait, then retry once.
 - Enrichment (optional, never required): Free Dictionary API
   (https://api.dictionaryapi.dev/api/v2/entries/en/<word>, no key).
   Any failure -> fall back to the bank lesson. Never post broken content.
 - Dry-run: if TELEGRAM_BOT_TOKEN or TELEGRAM_CHAT_ID is missing,
-  print the message instead of sending and exit 0. This is how you test
-  locally without a token.
+  print the message (word) or the poll payload (quiz) instead of sending
+  and exit 0. This is how you test locally without a token.
 - State: updates data/state.json {last_index, last_date, last_hash, last_kind}
   after a successful send (or dry-run, with hash recorded only on real send
   -- dry-run does NOT update state, so a real run is not skipped).
@@ -38,10 +40,10 @@ from pathlib import Path
 import requests
 
 try:
-    from templates import WORD_TEMPLATE, QUIZ_TEMPLATE
+    from templates import WORD_TEMPLATE
 except ImportError:  # when run as scripts/post.py from repo root
     sys.path.insert(0, str(Path(__file__).resolve().parent))
-    from templates import WORD_TEMPLATE, QUIZ_TEMPLATE
+    from templates import WORD_TEMPLATE
 
 BASE = Path(__file__).resolve().parent.parent
 LESSONS_FILE = BASE / "data" / "lessons.json"
@@ -146,9 +148,10 @@ def enrich_from_dictionary(word: str, lesson: dict) -> dict:
     return lesson
 
 
-def render_word(lesson: dict) -> str:
+def render_word(lesson: dict, day: int) -> str:
     return WORD_TEMPLATE.format(
         word=escape_markdown(lesson["word"]),
+        day=day,
         phonetic=escape_markdown(lesson["phonetic"]),
         meaning=escape_markdown(lesson["meaning"]),
         example=escape_markdown(lesson["example"]),
@@ -156,14 +159,29 @@ def render_word(lesson: dict) -> str:
     )
 
 
-def render_quiz(lesson: dict, yesterday: dict | None) -> str:
-    opts = lesson["quiz_options"]
-    return QUIZ_TEMPLATE.format(
-        quiz_q=escape_markdown(lesson["quiz_q"]),
-        opt0=escape_markdown(opts[0]), opt1=escape_markdown(opts[1]), opt2=escape_markdown(opts[2]), opt3=escape_markdown(opts[3]),
-        yesterday_word=escape_markdown(yesterday["word"]) if yesterday else "—",
-        yesterday_meaning=escape_markdown(yesterday["meaning"]) if yesterday else "—",
-    )
+def build_poll(lesson: dict, yesterday: dict | None, day: int) -> dict:
+    """Build the evening quiz as a Telegram Poll payload.
+
+    Poll question/options are plain text (no Markdown). The day label goes
+    at the start of the question. Explanation is yesterday's answer, cut to
+    Telegram's 200-character limit.
+    """
+    opts = [str(o) for o in lesson["quiz_options"]]
+    question = f"Day {day}/365: {lesson['quiz_q']}"[:300]
+    explanation = ""
+    if yesterday:
+        explanation = (
+            f"Yesterday's answer: {yesterday['word']} — {yesterday['meaning']}"
+        )[:200]
+    payload = {
+        "question": question,
+        "options": opts,
+        "correct_option_id": opts.index(lesson["quiz_a"]),
+        "type": "quiz",
+    }
+    if explanation:
+        payload["explanation"] = explanation
+    return payload
 
 
 def send_message(text: str) -> bool:
@@ -208,6 +226,52 @@ def send_message(text: str) -> bool:
     return False
 
 
+def send_poll(payload: dict) -> bool:
+    """Send the evening quiz as a Telegram Poll. Returns True on success.
+
+    Mirrors send_message (same retries/backoff/429 handling) but posts to
+    sendPoll with type=quiz. Poll questions/options are plain text.
+    """
+    url = f"https://api.telegram.org/bot{BOT_TOKEN}/sendPoll"
+    body = {"chat_id": CHAT_ID, **payload}
+    delays = [1, 2, 4, 8, 16]
+    for attempt in range(len(delays) + 1):
+        try:
+            resp = requests.post(url, json=body, timeout=30)
+        except requests.RequestException as e:
+            if attempt < len(delays):
+                time.sleep(delays[attempt])
+                continue
+            log_error(f"sendPoll network error after retries: {e}")
+            return False
+        if resp.status_code == 200:
+            return True
+        # Respect Telegram rate limiting
+        if resp.status_code == 429:
+            try:
+                wait = int(resp.json().get("parameters", {}).get("retry_after", 30))
+            except Exception:
+                wait = 30
+            wait = min(max(wait, 1), 120)
+            print(f"Rate limited (429), waiting {wait}s")
+            time.sleep(wait)
+            # one retry after waiting
+            try:
+                resp2 = requests.post(url, json=body, timeout=30)
+                if resp2.status_code == 200:
+                    return True
+            except requests.RequestException as e:
+                log_error(f"sendPoll retry after 429 failed: {e}")
+            log_error(f"sendPoll failed after 429: {resp.text[:500]}")
+            return False
+        if resp.status_code >= 500 and attempt < len(delays):
+            time.sleep(delays[attempt])
+            continue
+        log_error(f"sendPoll failed HTTP {resp.status_code}: {resp.text[:500]}")
+        return False
+    return False
+
+
 def main() -> int:
     now = datetime.now(timezone.utc)
     lessons = load_lessons()
@@ -222,8 +286,10 @@ def main() -> int:
     else:
         kind = "word" if now.hour < 12 else "quiz"
 
+    poll = None
+    text = None
     if kind == "word":
-        text = render_word(lesson)
+        text = render_word(lesson, day_of_year)
     else:
         # Day 1: no word has been posted yet, so there is no yesterday's
         # answer. Previously prev_index wrapped to lessons[-1] and the quiz
@@ -233,24 +299,42 @@ def main() -> int:
         else:
             prev_index = (index - 1) % len(lessons)
             yesterday = lessons[prev_index]
-        text = render_quiz(lesson, yesterday)
+        poll = build_poll(lesson, yesterday, day_of_year)
 
-    if not text.strip():
+    if text is not None and not text.strip():
         log_error("rendered message is empty — refusing to post broken content")
         return 1
+    if poll is not None and (not poll["question"].strip() or not poll["options"]):
+        log_error("poll payload is empty — refusing to post broken content")
+        return 1
 
-    digest = hashlib.sha256(text.encode("utf-8")).hexdigest()
+    # Dedupe: word posts hash the rendered text; quiz polls hash the
+    # canonical poll payload (question + options + correct answer).
+    if text is not None:
+        digest = hashlib.sha256(text.encode("utf-8")).hexdigest()
+    else:
+        digest = hashlib.sha256(
+            json.dumps(poll, sort_keys=True, ensure_ascii=False).encode("utf-8")
+        ).hexdigest()
     if digest == state.get("last_hash"):
         print("Duplicate detected (same hash as last post) — skipping send.")
         return 0
 
     if not BOT_TOKEN or not CHAT_ID:
         print("=== DRY RUN (no TELEGRAM_BOT_TOKEN / TELEGRAM_CHAT_ID set) ===")
-        print(text)
+        if text is not None:
+            print(text)
+        else:
+            print("POLL:")
+            print(json.dumps(poll, ensure_ascii=False, indent=2))
         print("=== END DRY RUN — nothing sent, state not updated ===")
         return 0
 
-    if not send_message(text):
+    if text is not None:
+        ok = send_message(text)
+    else:
+        ok = send_poll(poll)
+    if not ok:
         return 1
 
     state["last_index"] = index
