@@ -15,8 +15,9 @@ and a quiz every evening — **fully automated with GitHub Free, no AI at runtim
    required to choose the word.
 3. Morning run (07:15 UTC) posts **Word of the Day**: word + IPA phonetic +
    meaning + original example sentence + synonyms.
-4. Evening run (17:15 UTC) posts a **4-option quiz** on the morning word +
-   yesterday's answer.
+4. Evening run (17:15 UTC) posts a **Telegram Poll quiz** on the morning
+   word + yesterday's answer (question `Day N/365: …`, 4 options, correct
+   answer + explanation).
 5. After a successful post, the workflow commits the updated
    `data/state.json` back to the repo. That commit is what keeps the repo
    active, so GitHub does **not** disable the scheduled workflow after
@@ -92,7 +93,6 @@ The repo is live at https://github.com/halakouai-byte/english-vocab-daily and po
    - `TELEGRAM_CHAT_ID` — the channel chat ID
 5. **Test manually:** Actions → "Post to Telegram" → Run workflow.
    Or test locally first (see below).
-6. **Confirm the username** in the Telegram app and update this README.
 
 > Never commit `TELEGRAM_BOT_TOKEN` or `TELEGRAM_CHAT_ID` to the repo.
 > If a token ever leaks, revoke it in BotFather with `/revoke` and issue a new one.
@@ -131,8 +131,9 @@ README.md / BUILD_REPORT.md / LICENSE (MIT) / data/LICENSE (CC BY 4.0) / .gitign
 
 ## Safety / dedupe / retries
 
-- **Dedupe:** SHA-256 of the rendered message is stored in `state.json`.
-  A second run with the same content is skipped — no duplicate posts.
+- **Dedupe:** SHA-256 of the rendered message (word) or the canonical poll
+  payload (quiz) is stored in `state.json`. A second run with the same
+  content is skipped — no duplicate posts.
 - **Retries:** exponential backoff (1s, 2s, 4s, 8s, 16s) on network/5xx errors.
 - **Rate limit:** on Telegram 429, the script respects `retry_after`
   (capped at 120s) and retries once.
@@ -146,4 +147,4 @@ README.md / BUILD_REPORT.md / LICENSE (MIT) / data/LICENSE (CC BY 4.0) / .gitign
 
 ## Still needed
 
-- Nothing blocking launch: channel username confirmed (`@learnvocabularydaily`), bot token and channel chat ID stored as GitHub secrets (`TELEGRAM_BOT_TOKEN`, `TELEGRAM_CHAT_ID`) and proven by live posts — never in chat or in the repo. Next improvements (see AGENTS.md §7): "Day N/365" label, Poll quiz, Phrasal Verb Friday / Idiom Saturday automation, Stars PDF product.
+- Nothing blocking launch: channel username confirmed (`@learnvocabularydaily`), bot token and channel chat ID stored as GitHub secrets (`TELEGRAM_BOT_TOKEN`, `TELEGRAM_CHAT_ID`) and proven by live posts — never in chat or in the repo. Next improvements (see AGENTS.md §7): Phrasal Verb Friday / Idiom Saturday automation, Stars PDF product.

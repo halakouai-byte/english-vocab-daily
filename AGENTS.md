@@ -25,9 +25,10 @@ English. Owner language: Persian.
 - `data/state.json` — `{last_index, last_date, last_hash, last_kind}`. Advanced by the
   workflow after each successful post. `last_kind` is "word" or "quiz" — the
   watchdog uses it to tell which post is missing.
-- `scripts/post.py` — the poster. `scripts/templates.py` — `WORD_TEMPLATE`,
-  `QUIZ_TEMPLATE` (4 rotating quiz templates). `scripts/generate_lessons.py` —
-  bank generator/regenerator.
+- `scripts/post.py` — the poster (word = Markdown message; quiz = Telegram
+  Poll via `build_poll` + `send_poll`). `scripts/templates.py` —
+  `WORD_TEMPLATE` (word post, with `Day {day}/365` label).
+  `scripts/generate_lessons.py` — bank generator/regenerator.
 - `.github/workflows/post.yml` — workflow "Post to Telegram".
   `.github/workflows/watchdog.yml` — hourly catch-up: dispatches post.yml
   with the missing kind when a slot is overdue (see §4).
@@ -38,7 +39,8 @@ English. Owner language: Persian.
   setup guide, analytics baseline. `CHANNEL_SETUP.md`, `BOT_COMMANDS.md`,
   `RELEASE_TEST_PLAN.md`, `KPI_BASELINE.md` — ops docs.
 - `logs/` — `error-log.md` (public; token redacted before write),
-  `keepalive.md`.
+  `keepalive.md`, `watchdog.md` (watchdog activity — one line per overdue
+  slot or dispatch, nothing on no-op hours).
 
 ## 3. Validate + dry-run (run from repo root)
 
@@ -81,7 +83,10 @@ credentials on a local machine; use the dry-run or a manual
 - Post selection is deterministic: word =
   `lessons[day_of_year % len(lessons)]`. UTC hour < 12 posts the word;
   >= 12 posts the quiz on the morning word + yesterday's answer. `POST_KIND`
-  env overrides.
+  env overrides. Word posts carry `🗓️ *Day {day}/365*` after the title.
+  The quiz is a Telegram Poll (`sendPoll`, type=quiz): question
+  `Day {day}/365: {quiz_q}`, 4 options, `correct_option_id` = index of
+  `quiz_a`, `explanation` = yesterday's answer (cut to 200 chars).
 - Dedupe: SHA-256 of the rendered message is stored as `last_hash` in
   `data/state.json`. If the hash matches, nothing is sent. After a successful
   send the workflow commits the updated `data/state.json` (commit message
@@ -89,7 +94,8 @@ credentials on a local machine; use the dry-run or a manual
   repo active so GitHub does not disable the schedule after 60 days of
   inactivity; `keepalive.yml` (1st of month, 06:00 UTC) is the second belt.
   State also records `last_kind` ("word"/"quiz") so the watchdog knows which
-  post is missing.
+  post is missing. Word posts hash the rendered text; quiz polls hash the
+  canonical poll payload (question + options + correct answer).
 - Retry: exponential backoff 1s/2s/4s/8s/16s on network/5xx; on Telegram 429,
   respect `retry_after` and retry once. Optional enrichment via Free
   Dictionary API (api.dictionaryapi.dev, no key); any failure falls back to
@@ -106,6 +112,10 @@ credentials on a local machine; use the dry-run or a manual
   quiz if only the word posted by 19:00 UTC. It dispatches post.yml with
   `POST_KIND`; post.py dedupes by hash, so a late scheduled run only skips.
   The watchdog never dispatches while a post.yml run is queued/running.
+  Every overdue slot or dispatch is recorded as one line in
+  `logs/watchdog.md` (committed back to the repo, same pattern as
+  keepalive); no-op hours log nothing. `watchdog.yml` needs
+  `permissions: contents: write` for that commit.
 - Leak protection (Layer 1): workflow "Secret scan"
   (`.github/workflows/secret-scan.yml`) runs on push, on pull_request, and
   weekly (Sunday 03:00 UTC). It checks out the full history
@@ -181,6 +191,12 @@ credentials on a local machine; use the dry-run or a manual
 - 2026-11-21 17:15 UTC: scheduled run #4 ran (18s). No new post and no
   state change — consistent with the expected dedupe-skip (quiz 325 was
   already posted at 13:16 UTC).
+- 2026-11-22: bot menu emptied (`setMyCommands` with an empty list —
+  /start + /help removed until a command handler exists; /help advertised
+  a "free PDF" that doesn't exist). Quiz is now a Telegram Poll
+  (`sendPoll`, type=quiz) with the `Day N/365` label in the question;
+  word posts carry the label in the template. The watchdog now logs every
+  overdue slot or dispatch to `logs/watchdog.md`.
 - Income honesty (never promise more): at ~10k members $65–245/month;
   $200–1,000/month needs ~20k–50k members. Stars PDF (350 Stars) earliest
   end of week 1; Telegram Ads only after 1,000 members.
@@ -198,10 +214,11 @@ credentials on a local machine; use the dry-run or a manual
 - OPEN: watchdog.yml added 2026-11-21 — watch the first week: it must
   dispatch within ~1h of a missed slot and never double-post (dedupe is
   the backstop).
-- OPEN: quiz is a text message, not a Telegram Poll (no poll votes). Poll
-  quiz is a future improvement, not a launch blocker.
-- OPEN: "Day N/365" label is not in post templates yet; Phrasal Verb Friday
-  / Idiom Saturday are manual posts until the poster is updated.
+- DONE 2026-11-22: quiz is a Telegram Poll (`sendPoll`, type=quiz,
+  correct_option_id, explanation = yesterday's answer).
+- DONE 2026-11-22: "Day N/365" label — word template + poll question.
+- OPEN: Phrasal Verb Friday / Idiom Saturday are manual posts until the
+  poster is updated.
 - LATER: Stars PDF product (350 Stars) after 7 days of real content; /word
   + /quiz command handler (serverless tgcloud is the optional interactive
   add-on only — read-only, /start + /latest + search + categories, separate
