@@ -13,6 +13,9 @@
 # - The "post" concurrency group serialises runs (cancel-in-progress: false).
 # - The watchdog never dispatches while a post.yml run is already queued
 #   or in progress (checked via the API first).
+# - Every overdue slot or dispatch is recorded as one line in
+#   logs/watchdog.md (committed back to the repo, same pattern as
+#   keepalive.yml); no-op hours log nothing. Needs contents: write.
 # - A workflow_dispatch triggered by GITHUB_TOKEN does execute (the
 #   documented exception to the "token-triggered events don't trigger
 #   workflows" rule), so no PAT is needed.
@@ -24,7 +27,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
   actions: write
 
 concurrency:
@@ -40,6 +43,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Check state and dispatch the missing post
+        id: check
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
@@ -64,6 +68,7 @@ jobs:
           last_kind = state.get("last_kind", "")
 
           kind = None
+          action = "ok"
           if last_date != today:
               # Nothing posted today at all. Morning slot (07:15 UTC) is
               # overdue once it is 10:00 UTC — dispatch the word.
@@ -77,27 +82,48 @@ jobs:
 
           if kind is None:
               print(f"OK — nothing missing (last_date={last_date} last_index={last_index} last_kind={last_kind!r} now={now.isoformat()})")
-              raise SystemExit(0)
+          else:
+              # Don't dispatch while a post.yml run is already queued/running;
+              # the scheduled run may just be late.
+              req = urllib.request.Request(
+                  f"https://api.github.com/repos/{REPO}/actions/workflows/post.yml/runs?status=queued&status=in_progress&per_page=5",
+                  headers={"Authorization": f"Bearer {TOKEN}", "Accept": "application/vnd.github+json"},
+              )
+              with urllib.request.urlopen(req, timeout=30) as resp:
+                  runs = json.loads(resp.read())["workflow_runs"]
+              if runs:
+                  action = "due"
+                  print(f"SKIP — post.yml already {sorted({r['status'] for r in runs})} (run ids: {[r['id'] for r in runs]}); will re-check next hour")
+              else:
+                  body = json.dumps({"ref": "main", "inputs": {"kind": kind}}).encode()
+                  req = urllib.request.Request(
+                      f"https://api.github.com/repos/{REPO}/actions/workflows/post.yml/dispatches",
+                      data=body,
+                      headers={"Authorization": f"Bearer {TOKEN}", "Accept": "application/vnd.github+json", "Content-Type": "application/json"},
+                      method="POST",
+                  )
+                  with urllib.request.urlopen(req, timeout=30) as resp:
+                      action = "dispatched"
+                      print(f"DISPATCHED post.yml kind={kind} (HTTP {resp.status}) at {now.isoformat()}")
 
-          # Don't dispatch while a post.yml run is already queued/running;
-          # the scheduled run may just be late.
-          req = urllib.request.Request(
-              f"https://api.github.com/repos/{REPO}/actions/workflows/post.yml/runs?status=queued&status=in_progress&per_page=5",
-              headers={"Authorization": f"Bearer {TOKEN}", "Accept": "application/vnd.github+json"},
-          )
-          with urllib.request.urlopen(req, timeout=30) as resp:
-              runs = json.loads(resp.read())["workflow_runs"]
-          if runs:
-              print(f"SKIP — post.yml already {sorted({r['status'] for r in runs})} (run ids: {[r['id'] for r in runs]}); will re-check next hour")
-              raise SystemExit(0)
-
-          body = json.dumps({"ref": "main", "inputs": {"kind": kind}}).encode()
-          req = urllib.request.Request(
-              f"https://api.github.com/repos/{REPO}/actions/workflows/post.yml/dispatches",
-              data=body,
-              headers={"Authorization": f"Bearer {TOKEN}", "Accept": "application/vnd.github+json", "Content-Type": "application/json"},
-              method="POST",
-          )
-          with urllib.request.urlopen(req, timeout=30) as resp:
-              print(f"DISPATCHED post.yml kind={kind} (HTTP {resp.status}) at {now.isoformat()}")
+          # Report the outcome to the next step: it logs to logs/watchdog.md
+          # only when something was overdue or dispatched — no-op hours log
+          # nothing and commit nothing.
+          gh_out = os.environ.get("GITHUB_OUTPUT", "")
+          if gh_out:
+              with open(gh_out, "a") as f:
+                  f.write(f"watchdog_action={action}\n")
+                  f.write(f"watchdog_kind={kind or ''}\n")
+                  f.write(f"watchdog_index={index}\n")
           PY
+
+      - name: Record watchdog activity
+        if: steps.check.outputs.watchdog_action != 'ok'
+        run: |
+          mkdir -p logs
+          echo "- $(date -u +%FT%TZ) ${{ steps.check.outputs.watchdog_kind }} index=${{ steps.check.outputs.watchdog_index }} (watchdog ${{ steps.check.outputs.watchdog_action }})" >> logs/watchdog.md
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add logs/watchdog.md
+          git diff --cached --quiet || git commit -m "chore: watchdog log $(date -u +%F)"
+          git push
