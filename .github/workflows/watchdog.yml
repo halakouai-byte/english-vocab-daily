@@ -5,7 +5,9 @@
 # late; 2026-11-21 the 07:15 run was NEVER created (no run record at all)
 # and the morning word was only posted after a manual dispatch. This
 # workflow runs every hour and dispatches post.yml with the missing kind
-# when a slot is overdue, so a miss is caught within ~1-3 hours.
+# when a slot is overdue, so a miss is caught within a few hours (first
+# real catch: ~3h15m on 22 Nov 2026; the watchdog's own hourly ticks are
+# also best-effort and can arrive late or not at all).
 #
 # Safe by design:
 # - post.py dedupes by SHA-256 of the rendered message, so if the late
@@ -16,6 +18,10 @@
 # - Every overdue slot or dispatch is recorded as one line in
 #   logs/watchdog.md (committed back to the repo, same pattern as
 #   keepalive.yml); no-op hours log nothing. Needs contents: write.
+#   The log push rebases onto the latest main first: on 22 Nov 2026 the
+#   push lost a race to a post.yml state push (watchdog run #3 FAILED) and
+#   the dispatch was never recorded — logs/watchdog.md still does not
+#   exist. A push that still fails fails this step loudly.
 # - A workflow_dispatch triggered by GITHUB_TOKEN does execute (the
 #   documented exception to the "token-triggered events don't trigger
 #   workflows" rule), so no PAT is needed.
@@ -41,6 +47,10 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          # Full history: the log step rebases onto the latest main
+          # before pushing, and a shallow clone can refuse the rebase.
+          fetch-depth: 0
 
       - name: Check state and dispatch the missing post
         id: check
@@ -120,10 +130,18 @@ jobs:
       - name: Record watchdog activity
         if: steps.check.outputs.watchdog_action != 'ok'
         run: |
-          mkdir -p logs
-          echo "- $(date -u +%FT%TZ) ${{ steps.check.outputs.watchdog_kind }} index=${{ steps.check.outputs.watchdog_index }} (watchdog ${{ steps.check.outputs.watchdog_action }})" >> logs/watchdog.md
+          # Rebase onto the latest main BEFORE appending: on 22 Nov 2026
+          # this step's push was rejected as non-fast-forward because a
+          # post.yml run had pushed state.json first (watchdog run #3
+          # FAILED), and the dispatch left no log line. Retry the push
+          # once after another rebase. A push that still fails fails this
+          # step loudly — a lost log line must be visible, not silent.
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+          git pull --rebase origin main
+          mkdir -p logs
+          line="- $(date -u +%FT%TZ) ${{ steps.check.outputs.watchdog_kind }} index=${{ steps.check.outputs.watchdog_index }} (watchdog ${{ steps.check.outputs.watchdog_action }})"
+          grep -qxF -- "$line" logs/watchdog.md 2>/dev/null || echo "$line" >> logs/watchdog.md
           git add logs/watchdog.md
           git diff --cached --quiet || git commit -m "chore: watchdog log $(date -u +%F)"
-          git push
+          git push || (git pull --rebase origin main && git push)
