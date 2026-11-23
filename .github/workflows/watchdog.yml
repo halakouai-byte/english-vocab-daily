@@ -18,10 +18,15 @@
 # - Every overdue slot or dispatch is recorded as one line in
 #   logs/watchdog.md (committed back to the repo, same pattern as
 #   keepalive.yml); no-op hours log nothing. Needs contents: write.
-#   The log push rebases onto the latest main first: on 22 Nov 2026 the
-#   push lost a race to a post.yml state push (watchdog run #3 FAILED) and
-#   the dispatch was never recorded — logs/watchdog.md still does not
-#   exist. A push that still fails fails this step loudly.
+#   The log push rebases onto the latest main first (a push race with a
+#   post.yml state push is still possible). CORRECTION (2026-11-23):
+#   watchdog run #3 did NOT fail on a push race — it failed because
+#   .gitignore had `logs/`, so `git add logs/watchdog.md` was rejected;
+#   logs/watchdog.md still does not exist. .gitignore now allows the two
+#   committed log files. A push that still fails fails this step loudly.
+#   (The "post" concurrency group does NOT serialise runs — runs #6/#7 on
+#   22 Nov 2026 both posted in the same minute; the race guard in post.py
+#   is the backstop, not the group.)
 # - A workflow_dispatch triggered by GITHUB_TOKEN does execute (the
 #   documented exception to the "token-triggered events don't trigger
 #   workflows" rule), so no PAT is needed.
@@ -130,12 +135,14 @@ jobs:
       - name: Record watchdog activity
         if: steps.check.outputs.watchdog_action != 'ok'
         run: |
-          # Rebase onto the latest main BEFORE appending: on 22 Nov 2026
-          # this step's push was rejected as non-fast-forward because a
-          # post.yml run had pushed state.json first (watchdog run #3
-          # FAILED), and the dispatch left no log line. Retry the push
-          # once after another rebase. A push that still fails fails this
-          # step loudly — a lost log line must be visible, not silent.
+          # Rebase onto the latest main BEFORE appending: a push race with
+          # a post.yml state push is possible (the step would be rejected
+          # as non-fast-forward). CORRECTION (2026-11-23): run #3 on 22 Nov
+          # did NOT fail on a race — it failed because `git add
+          # logs/watchdog.md` was rejected by .gitignore (`logs/`); the
+          # .gitignore now allows this file. Retry the push once after
+          # another rebase. A push that still fails fails this step loudly
+          # — a lost log line must be visible, not silent.
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git pull --rebase origin main
