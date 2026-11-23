@@ -366,7 +366,7 @@ Last reviewed 2026-11-22.
 | 7 | Channel photo applied (EVD logo) | ✅ DONE | Verified 20 Nov 2026 via getChat — photo set |
 | 8 | Channel set to Public | ✅ DONE | Public username @learnvocabularydaily live since 20 Nov 2026 (https://t.me/learnvocabularydaily) |
 | 9 | Pinned welcome post posted + pinned | ✅ DONE | Posted + pinned 20 Nov 2026, message_id 5, verified via getChat |
-| 10 | First 7 days of backup posts live | ⬜ OPEN | Only 2 days of posts exist (20–21 Nov) and the word for 325 never posted — 7 backup days are not live yet |
+| 10 | First 7 days of backup posts live | ⬜ OPEN | Only 3 days of posts exist (20–22 Nov) — 7 backup days are not live yet. (The word for 325 is officially skipped, row 20 — it is not part of the backup.) |
 | 11 | GitHub repo pushed (public) | ✅ DONE | Repo halakouai-byte/english-vocab-daily public since 20 Nov 2026; HEAD 6a75bef (watchdog package, 21 Nov) |
 | 12 | GitHub Secrets set (`TELEGRAM_BOT_TOKEN`, `TELEGRAM_CHAT_ID`) | ✅ DONE | Set by the owner; proven by three live posts (manual run #1, scheduled run #2, manual run #3) — 20–21 Nov 2026 |
 | 13 | First live post via workflow succeeds | ✅ DONE | Manual run #1 posted lesson 324 "fill" 20 Nov 2026 16:29 Tehran; scheduled run #2 posted the quiz the same evening |
@@ -376,8 +376,9 @@ Last reviewed 2026-11-22.
 | 17 | Friday/Saturday themes automated or manual routine set | ⬜ OPEN | Manual until the poster is updated (§6) — Phrasal Verb Friday + Idiom Saturday not posted yet |
 | 18 | Week 1 growth started (acquaintances only, cap 200) | ⬜ OPEN | Only after row 10 — §7 |
 | 19 | Evening quiz is a Telegram Poll | ✅ DONE | Added 22 Nov 2026: `sendPoll` (type=quiz, correct_option_id, explanation = yesterday's answer) |
+| 20 | Word for day 325 ("final") | ⏭️ SKIPPED | Officially skipped 23 Nov 2026 (AGENTS.md §6): the 07:15 slot was dropped by GitHub and the manual recovery after noon posted the quiz instead; day 326 is already closed, so a late 325 word would break the day order, and "final" is already answered in the 326 quiz's explanation. Do not post it late. |
 
-**Summary: 15 DONE · 4 OPEN (rows 10, 15, 17, 18).**
+**Summary: 15 DONE · 4 OPEN (rows 10, 15, 17, 18) · 1 SKIPPED (row 20).**
 
 **What is still open:**
 

@@ -68,10 +68,10 @@ written for this repo. No copied text from BBC, Duolingo, or textbooks.
 
 - **Public repo: GitHub Actions is free and unlimited.** (Private repos get
   2,000 minutes/month — this repo must stay public.)
-- Each run takes ~1.5 minutes → 2 posts/day ≈ **90 minutes/month**
-  (0% of a private quota, $0 public). 10 posts/day would be ~450 min/month,
+- Each run takes ~10–20 seconds → 2 posts/day ≈ **20 minutes/month**
+  (0% of a private quota, $0 public). 10 posts/day would be ~100 min/month,
   still $0 on a public repo.
-- Cron minimum interval is 5 minutes; scheduling is best-effort — delays of hours happen and a scheduled event can be dropped entirely (2026-11-21: the 07:15 run was never created; 2026-11-20: the 17:15 run started ~5h48m late). `.github/workflows/watchdog.yml` runs hourly and dispatches the missing post, so a missed slot is caught within ~1–3 hours. Never promise an exact posting minute.
+- Cron minimum interval is 5 minutes; scheduling is best-effort — delays of hours happen and a scheduled event can be dropped entirely (2026-11-21: the 07:15 run was never created; 2026-11-20: the 17:15 run started ~5h48m late). `.github/workflows/watchdog.yml` runs hourly and dispatches the missing post, so a missed slot is usually caught within a few hours (first real catch: ~3h15m on 22 Nov 2026; the watchdog's own hourly ticks are also best-effort). Two runs starting in the same minute can both post before either writes state (22 Nov: the word posted twice); post.py now re-reads the live state just before sending. Never promise an exact posting minute.
 - One job timeout is 6 hours; we set `timeout-minutes: 5`.
 - Repo secrets: max 100 per repo — we use only 2.
 - Storage: `lessons.json` is under 2 MB, far below the 500 MB artifact /
@@ -133,7 +133,10 @@ README.md / BUILD_REPORT.md / LICENSE (MIT) / data/LICENSE (CC BY 4.0) / .gitign
 
 - **Dedupe:** SHA-256 of the rendered message (word) or the canonical poll
   payload (quiz) is stored in `state.json`. A second run with the same
-  content is skipped — no duplicate posts.
+  content is skipped — no duplicate posts. Just before sending, the poster
+  re-reads the live `state.json` from main and skips if the post is already
+  recorded — the local dedupe alone cannot stop two runs that start in the
+  same minute (22 Nov: the word posted twice).
 - **Retries:** exponential backoff (1s, 2s, 4s, 8s, 16s) on network/5xx errors.
 - **Rate limit:** on Telegram 429, the script respects `retry_after`
   (capped at 120s) and retries once.
