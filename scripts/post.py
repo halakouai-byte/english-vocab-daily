@@ -13,6 +13,15 @@ Behaviour:
 - Dedupe: SHA-256 of the rendered message (word) or the canonical poll
   payload (quiz) is stored in data/state.json. If the hash matches
   last_hash, nothing is sent.
+- Race guard: just before sending, post.py re-reads the LIVE state.json
+  from main (raw.githubusercontent.com, public repo, no auth) and skips
+  if it already records this post (same hash) or today's slot with the
+  same kind. Two runs starting in the same minute both read the same
+  checked-out state and both pass the local dedupe (22 Nov 2026: the word
+  posted twice, messages 11 and 12; 20 Nov 2026: the "fill" quiz posted
+  twice, messages 8 and 9). Fail-open: an unreadable live state means
+  "proceed" — never block a post on it. Residual window: the seconds
+  between the other run's send and its state push.
 - Retry: exponential backoff (1s, 2s, 4s, 8s, 16s) on network/5xx errors.
   If Telegram returns 429, respect retry_after and wait, then retry once.
 - Enrichment (optional, never required): Free Dictionary API
@@ -53,6 +62,10 @@ LOG_FILE = BASE / "logs" / "error-log.md"
 BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN", "").strip()
 CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID", "").strip()
 POST_KIND = os.environ.get("POST_KIND", "").strip().lower()  # "word" | "quiz" | ""
+
+# Race guard: the live state.json on main, re-read just before sending.
+# Public repo, no auth needed. See fetch_live_state().
+LIVE_STATE_URL = "https://raw.githubusercontent.com/halakouai-byte/english-vocab-daily/main/data/state.json"
 
 # The token is embedded in the Telegram API URL (api.telegram.org/bot<TOKEN>/...).
 # requests/urllib3 network exceptions can include that URL in their message,
@@ -126,6 +139,33 @@ def load_state():
 
 def save_state(state):
     STATE_FILE.write_text(json.dumps(state, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+
+def fetch_live_state():
+    """Re-read state.json from main (public raw URL, no auth).
+
+    Returns the live state dict, or None when it cannot be read (network
+    error, bad JSON, unexpected shape). None means "proceed" — the race
+    guard is fail-open by design: an unreadable live state must never
+    block a post. Used only in main(), just before sending.
+    """
+    try:
+        req = urllib.request.Request(
+            LIVE_STATE_URL, headers={"User-Agent": "EnglishVocabularyDaily/1.0"}
+        )
+        with urllib.request.urlopen(req, timeout=5) as resp:
+            live = json.loads(resp.read().decode("utf-8"))
+        if not isinstance(live, dict):
+            return None
+        return {
+            "last_index": int(live.get("last_index", -1)),
+            "last_date": str(live.get("last_date", "")),
+            "last_hash": str(live.get("last_hash", "")),
+            "last_kind": str(live.get("last_kind", "")),
+        }
+    except Exception as e:
+        print(f"Race guard: live state unreadable ({_redact(str(e))}) — proceeding with checked-out state.")
+        return None
 
 
 def enrich_from_dictionary(word: str, lesson: dict) -> dict:
@@ -329,6 +369,23 @@ def main() -> int:
             print(json.dumps(poll, ensure_ascii=False, indent=2))
         print("=== END DRY RUN — nothing sent, state not updated ===")
         return 0
+
+    # Race guard: re-read the LIVE state.json from main just before
+    # sending. Two runs starting in the same minute both read the same
+    # checked-out state and both pass the local dedupe above (22 Nov 2026:
+    # the word posted twice; 20 Nov 2026: the "fill" quiz posted twice).
+    # If main already records this exact post (same hash) — or today's
+    # slot with the same kind — skip. Fail-open: an unreadable live state
+    # means "proceed" (see fetch_live_state). Residual window: the seconds
+    # between the other run's send and its state push.
+    live = fetch_live_state()
+    if live is not None:
+        if digest == live.get("last_hash"):
+            print("Race guard: live state already has this post — skipping send.")
+            return 0
+        if live.get("last_date") == now.date().isoformat() and live.get("last_kind") == kind:
+            print(f"Race guard: live state already has today's {kind} — skipping send.")
+            return 0
 
     if text is not None:
         ok = send_message(text)

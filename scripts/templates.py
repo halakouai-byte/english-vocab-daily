@@ -12,5 +12,5 @@ WORD_TEMPLATE = """📌 *Word of the Day — {word}*
 
 🔁 *Synonyms:* {synonyms}
 
-✏️ Try it: write your own sentence with *{word}* in the comments.
+✏️ Try it: write your own sentence with *{word}*.
 📚 English Vocabulary Daily — one word every day, free daily word."""
