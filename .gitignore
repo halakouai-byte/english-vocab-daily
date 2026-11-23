@@ -2,7 +2,11 @@ __pycache__/
 *.pyc
 .venv/
 .env
-logs/
+logs/*
+# These two logs ARE committed (watchdog.yml + keepalive.yml write them);
+# error-log.md stays ignored — post.yml never commits it.
+!logs/watchdog.md
+!logs/keepalive.md
 # credentials and keys — never commit these
 *.pem
 *.key

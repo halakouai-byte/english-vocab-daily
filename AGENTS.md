@@ -42,7 +42,9 @@ English. Owner language: Persian.
   redacted before write), `keepalive.md`, `watchdog.md` (watchdog
   activity — one line per overdue slot or dispatch, nothing on no-op
   hours; created on the first due slot — still absent: the 22 Nov
-  dispatch's log line was lost to a push race, see §6).
+  dispatch's log line was never recorded because `logs/` was gitignored
+  (fixed in this commit — .gitignore now allows the two log files),
+  see §6).
 
 ## 3. Validate + dry-run (run from repo root)
 
@@ -126,8 +128,13 @@ credentials on a local machine; use the dry-run or a manual
   Every overdue slot or dispatch is recorded as one line in
   `logs/watchdog.md` (committed back to the repo, same pattern as
   keepalive); no-op hours log nothing. The log push rebases onto the
-  latest main first — on 22 Nov it lost a race to a post.yml state push
-  (watchdog run #3 FAILED) and the dispatch was never recorded.
+  latest main first (a push race is still possible, so the rebase stays
+  as hardening). CORRECTION (2026-11-23): watchdog run #3 did NOT fail
+  on a push race — it failed in "Record watchdog activity" because
+  .gitignore had `logs/`, so `git add logs/watchdog.md` was rejected
+  (exit 1, "paths are ignored"). The real fix is a .gitignore exception
+  for the two committed log files (next commit). keepalive.yml has the
+  same latent bug — its first run (1 Dec) would fail the same way.
   `watchdog.yml` needs `permissions: contents: write` for that commit.
 - Leak protection (Layer 1): workflow "Secret scan"
   (`.github/workflows/secret-scan.yml`) runs on push, on pull_request, and
@@ -232,8 +239,10 @@ credentials on a local machine; use the dry-run or a manual
 - 2026-11-23: the manager tried twice to delete duplicate message 8 via
   deleteMessage — Telegram returned 400 "message can't be deleted" both
   times. Message 8 is ~3 days old, past the bot's deletion window
-  (message 12, hours old, deleted fine on 22 Nov). The duplicate stays
-  until the owner deletes it from inside the Telegram app; do NOT retry
+  (message 12, hours old, deleted fine on 22 Nov). Message 9 is past the
+  48-hour window too, so NEITHER copy can be deleted via API. The
+  decision is the owner's: delete it himself in the Telegram app, or
+  leave the duplicate. The team waits — no further action, do NOT retry
   via API.
 - DECISION (2026-11-23): the word for day 325 ("final") is officially
   SKIPPED — it will not be posted late. Reason: the 07:15 slot was
@@ -247,6 +256,20 @@ credentials on a local machine; use the dry-run or a manual
   (message 8, by the manager); (2) race guard in post.py; (3) watchdog
   log push rebases before push; (4) word 325 officially skipped +
   welcome-post promises trimmed; (5) growth only after 7 backup days.
+- CORRECTION (2026-11-23): watchdog run #3 did NOT fail on a push race
+  (as review #3 and the 4602591 comments claimed) — it failed in
+  "Record watchdog activity" because .gitignore had `logs/`, so `git add
+  logs/watchdog.md` was rejected (exit 1). Proven locally: with `logs/`
+  the add fails; with `logs/*` + `!logs/watchdog.md` + `!logs/keepalive.md`
+  it succeeds, and `logs/error-log.md` stays ignored (it is never
+  committed). keepalive.yml has the same latent bug (first run 1 Dec).
+  The .gitignore fix landed in this commit.
+- 2026-11-23 16:13 UTC: word 327 "find" posted by a manual dispatch
+  (the 07:15 slot was never created by GitHub, 3rd day in a row; no
+  watchdog tick arrived after 05:16 UTC, so the rescue was manual, not
+  the watchdog). State commit `453a366` (last_index 327, last_kind word);
+  the word hash matches the dry-run rendering. The 17:15 quiz is due
+  next; the race guard (7fe194d) covers a late scheduled arrival.
 - Income honesty (never promise more): at ~10k members $65–245/month;
   $200–1,000/month needs ~20k–50k members. Stars PDF (350 Stars) earliest
   end of week 1; Telegram Ads only after 1,000 members.
@@ -262,10 +285,17 @@ credentials on a local machine; use the dry-run or a manual
 - OPEN: monitor the first 7 days of scheduled runs; re-run manually the same
   day if one fails.
 - OPEN: watchdog.yml added 2026-11-21 — it has dispatched once (22 Nov,
-  ~3h15m after the slot; the hourly ticks are also best-effort). It must
-  never double-post (dedupe + race guard are the backstop). The log fix
-  is in this commit, but no line exists in `logs/watchdog.md` yet — the
-  next real dispatch must produce one, or the alerting is still unproven.
+  ~3h15m after the slot; the hourly ticks are also best-effort — none
+  arrived after 05:16 UTC on 23 Nov). It must never double-post (dedupe
+  + race guard are the backstop). The rebase fix is in (4602591), but no
+  line exists in `logs/watchdog.md` yet — the real blocker was .gitignore
+  (`logs/`), not a push race; the .gitignore fix landed in this commit.
+  The next real dispatch must produce a log line, or the alerting is
+  still unproven.
+- DONE 2026-11-23: .gitignore fix — `logs/` → `logs/*` +
+  `!logs/watchdog.md` + `!logs/keepalive.md` (error-log.md stays
+  ignored); corrected the wrong "push race" story in the watchdog.yml
+  comments + AGENTS.md §2/§4/§6/§7 (this commit).
 - DONE 2026-11-22: bot menu cleared (`setMyCommands` with an empty list)
   — verified by `getMyCommands` returning [].
 - DONE 2026-11-22: quiz is a Telegram Poll (`sendPoll`, type=quiz,
@@ -274,9 +304,11 @@ credentials on a local machine; use the dry-run or a manual
 - DONE 2026-11-23: harsh-critic review #3 — 177/250 (71%). Its 5 fixes:
   (1) delete one duplicate "fill" quiz — NOT POSSIBLE via API: the
   manager tried twice (23 Nov), Telegram 400 "message can't be deleted"
-  (message 8 is ~3 days old, past the bot's deletion window); the
-  duplicate stays until the owner deletes it in the app. Cleanup is
-  reactive — it only catches what someone notices by reading the channel;
+  (message 8 is ~3 days old, past the bot's deletion window; message 9
+  is past the 48-hour window too). The decision is the owner's — delete
+  it himself in the Telegram app, or leave the duplicate; the team waits.
+  Cleanup is reactive — it only catches what someone notices by reading
+  the channel;
   (2) race guard in post.py (this commit); (3) watchdog log push rebases
   before push (this commit); (4) word 325 officially skipped +
   welcome-post promises trimmed (this commit); (5) growth only after 7
