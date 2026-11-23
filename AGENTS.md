@@ -283,9 +283,9 @@ credentials on a local machine; use the dry-run or a manual
   backup days — still OPEN.
 - DONE 2026-11-23: word for day 325 officially SKIPPED (see §6) — the
   channel's day order stays 324 → 326 → 327.
-- OPEN: welcome-post edit — the new text (without Friday/Saturday
-  promises and without the comments line) is prepared for the manager to
-  apply via editMessageText; the pinned message itself stays.
+- DONE 2026-11-23: welcome-post edit — applied by the manager via
+  editMessageText (ok:true, edit_date set, pin kept); the new text drops
+  the Friday/Saturday promises and the comments line.
 - OPEN: Phrasal Verb Friday / Idiom Saturday are manual posts until the
   poster is updated.
 - LATER: Stars PDF product (350 Stars) after 7 days of real content; /word
