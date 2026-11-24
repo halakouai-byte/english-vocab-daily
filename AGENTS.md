@@ -325,6 +325,11 @@ credentials on a local machine; use the dry-run or a manual
   before push (this commit); (4) word 325 officially skipped +
   welcome-post promises trimmed (this commit); (5) growth only after 7
   backup days — still OPEN.
+- DONE 2026-11-24: harsh-critic review #4 — 185/250 (74%), up from
+  177/250 (71%). Day 327 closed complete (word + quiz, both manual
+  rescues, no duplicate — the late scheduled run #12 dedupe-skipped);
+  watchdog ticks on 23 Nov came at 05:16 and 16:52 UTC, an 11h gap;
+  the watchdog log is still unproven (logs/watchdog.md does not exist).
 - DONE 2026-11-23: word for day 325 officially SKIPPED (see §6) — the
   channel's day order stays 324 → 326 → 327.
 - DONE 2026-11-23: welcome-post edit — applied by the manager via
