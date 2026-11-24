@@ -265,11 +265,22 @@ credentials on a local machine; use the dry-run or a manual
   committed). keepalive.yml has the same latent bug (first run 1 Dec).
   The .gitignore fix landed in this commit.
 - 2026-11-23 16:13 UTC: word 327 "find" posted by a manual dispatch
-  (the 07:15 slot was never created by GitHub, 3rd day in a row; no
-  watchdog tick arrived after 05:16 UTC, so the rescue was manual, not
-  the watchdog). State commit `453a366` (last_index 327, last_kind word);
-  the word hash matches the dry-run rendering. The 17:15 quiz is due
-  next; the race guard (7fe194d) covers a late scheduled arrival.
+  (the 07:15 slot was never created by GitHub, 3rd day in a row; the
+  watchdog's ticks on 23 Nov were #6 at 05:16 UTC and #7 at 16:52 UTC —
+  an 11h gap — so no tick arrived in the 07:15–16:13 UTC window and the
+  rescue was manual, not the watchdog). State commit `453a366`
+  (last_index 327, last_kind word); the word hash matches the dry-run
+  rendering.
+- 2026-11-23 17:57 UTC: quiz 327 posted by a manual dispatch
+  (kind=quiz, run 45233196810) — neither slot was created on time (the
+  scheduled run #12 arrived 19:12 UTC, after the manual quiz, and
+  dedupe-skipped with no state change). State commit `e6b939e`
+  (last_index 327, last_kind quiz); the quiz hash matches the
+  expected Poll digest (question 'Day 327/365: "find" means...?', correct
+  option "to discover something", explanation "Yesterday's answer:
+  finance — money and banking"). Day 327 closed complete (word + quiz),
+  both by manual rescue. The late scheduled arrival (#12, 19:12 UTC)
+  dedupe-skipped — proven, not just expected.
 - Income honesty (never promise more): at ~10k members $65–245/month;
   $200–1,000/month needs ~20k–50k members. Stars PDF (350 Stars) earliest
   end of week 1; Telegram Ads only after 1,000 members.
@@ -285,13 +296,14 @@ credentials on a local machine; use the dry-run or a manual
 - OPEN: monitor the first 7 days of scheduled runs; re-run manually the same
   day if one fails.
 - OPEN: watchdog.yml added 2026-11-21 — it has dispatched once (22 Nov,
-  ~3h15m after the slot; the hourly ticks are also best-effort — none
-  arrived after 05:16 UTC on 23 Nov). It must never double-post (dedupe
-  + race guard are the backstop). The rebase fix is in (4602591), but no
-  line exists in `logs/watchdog.md` yet — the real blocker was .gitignore
-  (`logs/`), not a push race; the .gitignore fix landed in this commit.
-  The next real dispatch must produce a log line, or the alerting is
-  still unproven.
+  ~3h15m after the slot; the hourly ticks are also best-effort — on
+  23 Nov they came at 05:16 and 16:52 UTC, an 11h gap). It must never
+  double-post (dedupe + race guard are the backstop; the late scheduled
+  run #12 on 23 Nov dedupe-skipped after the manual quiz — proven). The
+  rebase fix is in (4602591) and the .gitignore fix landed (76718ae),
+  but no line exists in `logs/watchdog.md` yet — every tick since was a
+  no-op (no-op hours log nothing by design). The next real dispatch must
+  produce a log line, or the alerting is still unproven.
 - DONE 2026-11-23: .gitignore fix — `logs/` → `logs/*` +
   `!logs/watchdog.md` + `!logs/keepalive.md` (error-log.md stays
   ignored); corrected the wrong "push race" story in the watchdog.yml
