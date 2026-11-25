@@ -281,6 +281,15 @@ credentials on a local machine; use the dry-run or a manual
   finance — money and banking"). Day 327 closed complete (word + quiz),
   both by manual rescue. The late scheduled arrival (#12, 19:12 UTC)
   dedupe-skipped — proven, not just expected.
+- 2026-11-24: day 328 closed complete. Word "fine" posted 10:08 UTC
+  (state commit `ba8d9da`, ~2h53m after the 07:15 slot); quiz posted
+  17:39 UTC (state commit `792d5b1`, ~24m after the 17:15 slot — the
+  closest to on time yet). State on main is 328/quiz; the quiz hash
+  matches the expected Poll digest (question 'Day 328/365: What does
+  "fine" mean?', correct "good; of high quality", explanation
+  "Yesterday's answer: find — to discover something"). Whether the two
+  runs were scheduled or manual was not verified (the run list was not
+  read); the next critic review checks it.
 - Income honesty (never promise more): at ~10k members $65–245/month;
   $200–1,000/month needs ~20k–50k members. Stars PDF (350 Stars) earliest
   end of week 1; Telegram Ads only after 1,000 members.
